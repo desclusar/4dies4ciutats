@@ -52,14 +52,20 @@ footer ul.social li img:hover {
   opacity: 0.7;
 }
 
-@media(min-width: 992px) {  
+@media(min-width: 768px) {  
+  
   .flex-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: left;
+
   }
 
+  footer ul li,
+  footer div:first-child p{
+  font-size: 0.9rem;
+  }
   footer .footer-right {
     text-align: right;
   }
