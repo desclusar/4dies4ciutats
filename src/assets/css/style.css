@@ -607,5 +607,9 @@ grid-template-columns: 0.9fr 1.1fr;
 .ruta-dia iframe{
   padding: 1rem;
 }
-
+}
+/*W3C dona fallo pel transition:0; (sense "s")*/
+[data-aos][data-aos][data-aos-delay="50"],
+body[data-aos-delay="50"] [data-aos] {
+  transition-delay: 0s !important;
 }
