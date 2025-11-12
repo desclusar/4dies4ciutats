@@ -1,0 +1,18 @@
+/* --------------------------------------------------
+   VARIABLES
+-------------------------------------------------- */
+:root {
+  --font: "Poppins", sans-serif;
+  --font-header: "Oswald", sans-serif;
+  --amber: #b0662d;
+  --offwhite: #d2cdc6;
+  --body-bg: #d2cdc6;
+  --body-color: rgb(46 29 14);
+  --header-mask: #000000;
+  --light: rgb(255 255 255);
+  --secondary: #b0662d;
+  --hover: #4a332fef;
+  --bg-rutes: #3b2a28;
+  --h3-rutes: rgb(245, 222, 179);
+  --size: clamp(40px, 7vw, 96px);
+}
