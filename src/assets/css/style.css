@@ -594,6 +594,10 @@ select:required:user-valid {
   background-color: var(--offwhite);
 }
 
+.intro-desc{
+  padding-left: 0;
+  padding-right: 0;
+}
 .ruta-dia {
 display:grid;
 grid-template-columns: 0.9fr 1.1fr;

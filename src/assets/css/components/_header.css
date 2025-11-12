@@ -17,7 +17,9 @@
 .det-bruges #main-header {
   background-image: url("../../img/det-bruges.jpg");
 }
-
+.cat-primavera #main-header {
+  background-image: url("../../img/hq/primavera-header-hq.jpg");
+}
 .det-roma #main-header {
   background-image: url("../../img/hq/primavera-roma-hq.jpg");
 }
@@ -31,6 +33,9 @@
   background-image: url("../../img/hq/primavera-sevilla-hq.jpg");
 }
 
+.cat-estiu #main-header {
+  background-image: url("../../img/hq/estiu-header-hq.jpg");
+}
 .det-reykjavik #main-header {
   background-image: url("../../img/hq/estiu-reykjavik-hq.jpg");
 }
@@ -42,6 +47,10 @@
 }
 .det-santorini #main-header {
   background-image: url("../../img/hq/estiu-santorini-hq.jpg");
+}
+
+.cat-tardor #main-header {
+  background-image: url("../../img/hq/tardor-header-hq.jpg");
 }
 
 .det-budapest #main-header {
@@ -299,88 +308,89 @@ header * {
 }
 
 @media (min-width: 768px) {
-    header {
-      display: block;
-      justify-content: center; /* centra horitzontalment */
-      align-items: center; /* centra verticalment */
-      width: 100%;
-    }
-
-    .header-container {
-      display: grid;
-      grid-template-rows: 1fr 1fr 1fr;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 0;
-    }
-
-    .nav-toggle {
-      display: none;
-    }
-
-    .main-nav {
-      display: flex;
-      align-content: flex-end;
-      grid-row: 3;
-      display: inline;
-      justify-content: center;
-      align-items: center;
-      max-height: none; 
-      overflow: visible;
-      opacity: 1; 
-    }
-
-    .main-nav ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      gap: 0;
-    }
-
-    .main-nav li {
-      padding: 0 1.5rem;
-      font-size: 1.5rem;
-    }
-
-    .dropdown {
-      position: relative;
-    }
-
-    .submenu {
-      position: absolute;      
-      top: calc(100% + 2px); /*Volia donar espai pero llavors enre els dos hi ha uns pixels en el que el submenu despareix*/
-      padding: 0.5rem 0;
-      margin: 0;
-      min-width: 180px;
-      background-color: #fff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-      list-style: none;
-      z-index: 999;
-    }
-
-    .submenu li a {
-      font-size: 1.1rem;
-      padding: 0.5rem 1rem;
-      color:var(--header-mask);
-      white-space: nowrap;
-    }
-
-    .submenu li a:hover {
-      font-weight: bold;
-      
-    }
-
-    .dropdown:hover > .submenu {
-      display: block !important;
-    }
-
-    .slogan {
-      grid-row: 2;
-      margin-top: 0;
-      max-height: none;
-      font-size: clamp(2rem, 2vw, 4rem);
-    }
+  header {
+    display: block;
+    justify-content: center; /* centra horitzontalment */
+    align-items: center; /* centra verticalment */
+    width: 100%;
   }
+
+  .header-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    align-content: flex-end;
+    grid-row: 3;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    max-height: none;
+    overflow: visible;
+    opacity: 1;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 0;
+  }
+
+  .main-nav li {
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .submenu {
+    position: absolute;
+    top: calc(
+      100% + 2px
+    ); /*Volia donar espai pero llavors enre els dos hi ha uns pixels en el que el submenu despareix*/
+    padding: 0.5rem 0;
+    margin: 0;
+    min-width: 180px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    list-style: none;
+    z-index: 999;
+  }
+
+  .submenu li a {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    color: var(--header-mask);
+    white-space: nowrap;
+  }
+
+  .submenu li a:hover {
+    font-weight: bold;
+  }
+
+  .dropdown:hover > .submenu {
+    display: block !important;
+  }
+
+  .slogan {
+    grid-row: 2;
+    margin-top: 0;
+    max-height: none;
+    font-size: clamp(2rem, 2vw, 4rem);
+  }
+}
