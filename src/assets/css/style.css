@@ -82,26 +82,6 @@ section > h2 {
   max-width: 100%;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .info,
-  .rutes,
-  .gastronomia,
-  .imprescindibles {
-    padding: 2rem 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  }
-}
-
 /* -------------------------------------------------
    MULTIMÈDIA I ELEMENTS GENERALS
 -------------------------------------------------- */
@@ -153,10 +133,6 @@ figcaption {
   text-align: justify;
 }
 
-.llistat-temporades {
-  padding-bottom: 1rem;
-}
-
 .grid-blog article {
   display: block;
   margin-top: 0rem;
@@ -197,6 +173,10 @@ figcaption {
   object-fit: cover;
 }
 
+  .article-content p{
+    margin-bottom: 1rem;
+  }
+
 .copyright {
   position: absolute;
   right: 5px;
@@ -216,7 +196,6 @@ figcaption {
 -------------------------------------------------- */
 .ciutat-del-mes {
   background-color: var(--offwhite);
-  padding:2rem 0;
 }
 
 .ciutat-del-mes-container {
@@ -238,12 +217,13 @@ figcaption {
   text-align: justify;
 }
 
-.ciutat-del-mes-container .btn {
+.btn {
+  display: inline-block;
+  margin-left: auto;
+  margin-top: auto;
   align-self: flex-end;
-  margin-top: 1rem;
   padding: 0.6rem 1.4rem;
   border-radius: 0.3rem;
-  display: inline-block;
   font-weight: 500;
   text-decoration: none;
   background-color: #4a332fef;
@@ -251,7 +231,7 @@ figcaption {
   transition: background-color 0.3s ease;
 }
 
-.ciutat-del-mes-container .btn:hover {
+.btn:hover {
   background-color: #4a332f94;
 }
 
@@ -507,6 +487,24 @@ select:required:user-valid {
 /************* MEDIA QUERY TAULETA/ESCRIPTORI ********/
 
 @media (min-width: 768px) {
+  .info,
+  .rutes,
+  .gastronomia,
+  .imprescindibles {
+    padding: 2rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .intro,
+  .intro-temporades,
+  .intro-desc,
+  .info,
+  .gastronomia,
+  .imprescindibles {
+    padding: 2rem 1rem;
+  }
+
   .grid-blog > article,
   .grid-aside > article {
     display: flex;
@@ -516,8 +514,8 @@ select:required:user-valid {
   }
 
   .llistat-temporades > h2 {
-    padding-top: 1rem;
-    padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 1rem;
     padding-left: 0;
     padding-right: 0;
   }
@@ -532,7 +530,7 @@ select:required:user-valid {
     column-gap: 2rem;
     row-gap: 2rem;
     margin-top: 0;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem;
     align-items: stretch;
   }
 
@@ -559,6 +557,7 @@ select:required:user-valid {
     justify-content: space-between;
     justify-content: flex-start;
   }
+
   .grid-blog article:first-child {
     padding-top: 0;
     grid-column: 1 / span 3;
@@ -580,36 +579,49 @@ select:required:user-valid {
   .ciutat-del-mes-container {
     display: flex;
     flex-direction: row;
-  background-color: var(--light);
-  margin-top: 0;
-} 
+    background-color: var(--light);
+    margin-top: 0;
+  }
 
-.card-ciutat-del-mes{
-  padding: 2rem;
-  margin-left: 0;
-  
-}
-.connecta,
- fieldset {
-  background-color: var(--offwhite);
+  .card-ciutat-del-mes {
+    padding: 2rem;
+    margin-left: 0;
+  }
+  .connecta,
+  fieldset {
+    background-color: var(--offwhite);
+  }
+
+  .intro-desc {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ruta-dia {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .ruta-dia iframe {
+    padding: 1rem;
+  }
 }
 
-.intro-desc{
-  padding-left: 0;
-  padding-right: 0;
-}
+@media (min-width: 1200px) {
 
-.ruta-dia {
-display:grid;
-grid-template-columns: 0.9fr 1.1fr;
-}
+  .container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
 
-.ruta-dia iframe{
-  padding: 1rem;
-}
-}
-/*W3C dona fallo pel transition:0; (sense "s")*/
-[data-aos][data-aos][data-aos-delay="50"],
-body[data-aos-delay="50"] [data-aos] {
-  transition-delay: 0s !important;
+  .intro,
+  .intro-temporades,
+  .intro-desc,
+  .info,
+  .gastronomia,
+  .imprescindibles {
+    padding: 2rem 0rem;
+  }
 }
