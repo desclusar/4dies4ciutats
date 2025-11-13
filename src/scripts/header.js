@@ -102,11 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-AOS.init();
-
 const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
 const header = document.querySelector("#main-header");
