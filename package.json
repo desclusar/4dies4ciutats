@@ -20,6 +20,8 @@
     "vnu-jar": "^25.11.8"
   },
   "dependencies": {
-    "glightbox": "^3.3.1"
+    "glightbox": "^3.3.1",
+    "sweetalert2": "^11.26.3",
+    "vanilla-cookieconsent": "^3.1.0"
   }
 }
