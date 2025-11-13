@@ -1,4 +1,8 @@
 <footer>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
     <div class="container">
         <div class="flex-footer">
             <div>
@@ -16,17 +20,26 @@
 
                 </ul>
                 <ul class="legal">
-                    <li><a href="">Política de privadesa</a></li>
-                    <li><a href="">Política de <i lang="en">cookies</i></a></li>
-                    <li><a href="">Avís legal</a></li>
-                    <li><a href="">Contacte</a></li>
+
+                    <li><a href="#" 
+                        class="popup-link" 
+                        data-title="Sobre aquest projecte"
+                        data-text="4 dies, 4 ciutats és un exercici pràctic de l'assignatura Eines html i css de desenvolupament web per descobrir rutes curtes per Europa."
+                        data-icon="info">
+                            Sobre el projecte
+                            </a>
+                    </li>
+                    <li><a href="#">Política de <i lang="en">cookies</i></a></li>
+                    <li><a href="#">Avís legal</a></li>
+                    <li><a href="#">Contacte</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
+
 <!-- scripts de tot el web -->
 <!-- Els carrego aquí perque així amb els includes queden carregats a totes les pàgines -->
- 
+
 <script type="module" src="/src/scripts/header.js"></script>
 <script type="module" src="/src/scripts/main.js"></script>
