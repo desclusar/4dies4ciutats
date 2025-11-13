@@ -68,7 +68,7 @@ h3 {
 
 ul {
   padding-left: 0;
-  list-style-position: inside; /* mou la vinyeta dins la caixa del text */
+  list-style-position: inside;
 }
 
 section > h2 {

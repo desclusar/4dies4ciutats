@@ -87,14 +87,14 @@ header::before {
 
 header * {
   position: relative;
-  z-index: 1; /* el text i el menú queden per sobre */
+  z-index: 1;
 }
 
 .logo-link,
 .slogan,
 .nav-toggle {
   position: relative;
-  z-index: 2; /* per sobre de la màscara */
+  z-index: 2;
 }
 
 .hero-video {
@@ -137,7 +137,6 @@ header * {
   border-radius: 2px;
 }
 
-/* Icona "X" quan el menú està obert */
 .nav-toggle.is-open span:nth-child(1) {
   transform: rotate(45deg) translate(8px, 8px);
 }
@@ -181,7 +180,7 @@ header * {
   opacity: 1;
 }
 
-/* Quan el menú mòbil està obert, amaguem l'slogan */
+/* Quan el menú mòbil està obert, amago l'slogan */
 @media (max-width: 767px) {
   header.menu-open .slogan {
     opacity: 0;
@@ -197,44 +196,66 @@ header * {
   color: inherit;
 }
 
-.logo-div {
-  display: inline-flex;
-  align-items: stretch;
-  font-family: "Nunito Sans", system-ui, sans-serif;
+.logo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dues columnes */
+  grid-template-rows: auto auto; /* dues files */
+  height: 60px;
+  width: 80px;
 }
-
-.num-quatre {
+.num-4 {
+  grid-row: span 2;
   display: flex;
-  align-items: flex-end;
-  font-size: clamp(2.6rem, 6vw, 3.4rem);
-  font-weight: 800;
-  color: var(--amber);
-  line-height: 0.75;
-  margin: -4px 4px 0 0;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 0.5rem;
+  color:var(--amber);
   transition: color 0.3s ease;
-}
-
-.textos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .text-dies,
 .text-ciutats {
-  color: var(--offwhite);
-  font-weight: 800;
-  font-size: clamp(1.1rem, 3.2vw, 1.5rem);
-  line-height: 1;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 2.3rem;
+  font-size:2.5rem;
+  font-weight: 700;
+  color:var(--offwhite);
   transition: color 0.3s ease;
 }
 
-.logo-div:hover .text-dies,
-.logo-div:hover .text-ciutats {
-  color: #d47a34;
+.text-dies {
+  display: flex;
+  justify-content: flex-start; /* horitzontal → esquerra */
+  align-items: flex-end; /* vertical → avall */
+  padding-left: 10px;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-left: -0.5rem;
+  padding: 0;
 }
 
-.logo-div:hover .num-quatre {
+/* BOTTOM-RIGHT → a l'esquerra i ADALT */
+.text-ciutats {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start; /* horitzontal → esquerra */
+  align-items: flex-start; /* vertical → amunt */
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  margin-left: -0.5rem;
+}
+
+.logo-container:hover .text-dies,
+.logo-container:hover .text-ciutats {
+  color: var(--amber);
+}
+
+.logo-container:hover .num-4 {
   color: var(--offwhite);
 }
 
