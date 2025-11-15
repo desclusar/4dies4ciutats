@@ -484,9 +484,55 @@ select:required:user-valid {
   cursor: pointer;
 }
 
+/* --------------------------------------------------
+   LINKS
+-------------------------------------------------- */
+.links section{
+  padding:1rem;
+border:none;
+}
+
+.links h2{
+  padding: 0;
+}
+
+.links li{
+  padding-left: 1rem;
+}
+
+.links ul{
+  list-style: none;
+  padding-left:15px ;
+}
+
+.link-ciutat {
+  display: flex;            
+  align-items: center;      
+  gap: 0.5rem;              
+}
+
+.link-ciutat .fi{
+  font-size: 1.8rem; 
+   line-height:3; 
+}
+
+.link-ciutat h2{
+  margin:0;
+  font-size: 1.8rem;
+}
+
+.links-ciutat{
+  display: grid;
+  grid-template-columns: 1fr;
+}
 /************* MEDIA QUERY TAULETA/ESCRIPTORI ********/
 
 @media (min-width: 768px) {
+
+.container {
+    padding-left:1rem;
+    padding-right: 1rem;
+  }
   .info,
   .rutes,
   .gastronomia,
@@ -605,6 +651,19 @@ select:required:user-valid {
   .ruta-dia iframe {
     padding: 1rem;
   }
+
+.links-ciutat{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    margin: 2rem 0;
+}
+.links section{
+  padding:1rem;
+  border-top: #3b2a28 solid 0.5px;
+  border-bottom: #3b2a28 solid 0.5px;
+  border-left: #3b2a28 solid 0.5px;
+  border-right: #3b2a28 solid 0.5px;
+}
 }
 
 @media (min-width: 1200px) {

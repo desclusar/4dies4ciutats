@@ -1,7 +1,7 @@
-// Marca l’enllaç corresponent com actiu
+//*************** .ACTIVE DINÀMICAMENT ************************/
 const classes = Array.from(document.body.classList);
 let currentPage = classes.find((c) =>
-  ["home", "cat-nadal", "cat-primavera", "cat-estiu", "cat-tardor"].includes(c)
+  ["home", "cat-nadal", "cat-primavera", "cat-estiu", "cat-tardor", "links"].includes(c)
 );
 
 if (!currentPage) {
@@ -31,12 +31,13 @@ if (!currentPage) {
 
   if (
     classes.some((c) =>
-      ["det-budapest", "det-munic", "det-krakovia"].includes(c)
+      ["det-budapest", "det-munic","det-paris", "det-krakovia"].includes(c)
     )
   ) {
     currentPage = "cat-tardor";
   }
 }
+
 if (currentPage) {
   document.querySelectorAll("header nav a").forEach((a) => {
     if (a.dataset.page === currentPage) {
@@ -45,11 +46,13 @@ if (currentPage) {
   });
 }
 
+//*************** CANVI DE SLÒGAN DINÀMIC ************************/
+
 document.addEventListener("DOMContentLoaded", () => {
   const slogan = document.querySelector(".slogan");
   if (!slogan) return;
 
-  // Normalitzem el path per evitar problemes amb index.html i barres finals
+  // Normalitzo el path per evitar problemes amb index.html i barres finals
   let path = window.location.pathname;
   path = path.replace(/index\.html$/i, "").replace(/\/$/, "");
 
@@ -77,12 +80,14 @@ document.addEventListener("DOMContentLoaded", () => {
     "/det13": "Budapest: banys i llum daurada sobre el Danubi",
     "/det14": "Munic: cervesa, fulles i tradició bavaresa",
     "/det15": "París: la ciutat de la llum en tons daurats",
-    "/det16": "Krakòvia: història i silenci de tardor"
+    "/det16": "Krakòvia: història i silenci de tardor",
+
+    "/links": "Enllaços d'interès"
   };
 
-  // Busquem coincidència exacta al final del path (robust per det10, det11, etc.)
+  // Busco coincidència exacta al final del path
   const found = Object.keys(slogans)
-    .sort((a, b) => b.length - a.length) // prioritza claus més llargues
+    .sort((a, b) => b.length - a.length)
     .find((key) => {
       const pattern = new RegExp(`${key}(?:/index\\.html)?/?$`);
       return pattern.test(path);
@@ -92,15 +97,15 @@ document.addEventListener("DOMContentLoaded", () => {
     ? slogans[found]
     : "Descobreix ciutats europees en només 96 hores";
 
-  // Assignem text i apliquem transició suau
   slogan.textContent = text;
 
-  // Forcem el repaint i després afegim la classe perquè la transició funcioni
-  // (això evita que surti ja en opacitat 1 sense animació)
   requestAnimationFrame(() => {
     slogan.classList.add("slogan-visible");
   });
 });
+
+
+//*************** MENÚ NAVEGACIÓ ************************/
 
 const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
@@ -113,16 +118,13 @@ if (navToggle && mainNav && header) {
     navToggle.classList.toggle("is-open", isOpen);
     navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
 
-    // 👇 Afegim o traiem la classe al header
     header.classList.toggle("menu-open", isOpen);
   });
 }
 
-// Submenús en mòbil
 dropdownLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     if (window.innerWidth < 768) {
-      //e.preventDefault();
       link.parentElement.classList.toggle("is-open");
     }
   });

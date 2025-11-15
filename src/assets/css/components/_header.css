@@ -198,20 +198,23 @@ header * {
 
 .logo-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* dues columnes */
-  grid-template-rows: auto auto; /* dues files */
-  height: 60px;
-  width: 80px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  /*height: 60px;
+  width: 80px;*/
+    width: clamp(60px, 10vw, 110px); 
+    height:auto
 }
 .num-4 {
   grid-row: span 2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 6rem;
+  /*font-size: 3.5rem;*/
+    font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 700;
-  line-height: 0.5rem;
-  color:var(--amber);
+  line-height: 1rem;
+  color: var(--amber);
   transition: color 0.3s ease;
 }
 
@@ -219,35 +222,25 @@ header * {
 .text-ciutats {
   display: flex;
   justify-content: flex-start;
-  line-height: 2.3rem;
-  font-size:2.5rem;
+  padding: 0;
+  margin-top: 0;
+  margin-left: -0.2rem;
+  line-height: clamp(1.2rem, 3vw, 1.6rem);
+  /*font-size: 1.5rem;*/
+  font-size: clamp(1.2rem, 3vw, 2.3rem);
   font-weight: 700;
-  color:var(--offwhite);
+  color: var(--offwhite);
   transition: color 0.3s ease;
 }
 
 .text-dies {
-  display: flex;
-  justify-content: flex-start; /* horitzontal → esquerra */
-  align-items: flex-end; /* vertical → avall */
-  padding-left: 10px;
+  align-items: flex-end;
   font-family: sans-serif;
-  font-size: 2.5rem;
-  margin-top: 0;
-  margin-left: -0.5rem;
-  padding: 0;
 }
 
-/* BOTTOM-RIGHT → a l'esquerra i ADALT */
 .text-ciutats {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: flex-start; /* horitzontal → esquerra */
-  align-items: flex-start; /* vertical → amunt */
+  align-items: flex-start;
   font-family: sans-serif;
-  font-size: 2.5rem;
-  margin-left: -0.5rem;
 }
 
 .logo-container:hover .text-dies,
