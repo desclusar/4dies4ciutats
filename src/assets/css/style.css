@@ -112,30 +112,31 @@ figcaption {
   padding: 2rem 1rem;
 }
 
-.intro-desc p {
+.intro p,
+.intro-desc p,
+.intro-temporades p {
   text-align: justify;
 }
+
 .rutes h2 {
-  padding-left: 1rem;
   padding-top: 2rem;
+  padding-right: 0;
   padding-bottom: 0;
+  padding-left: 1rem;
 }
 
 .card-ciutat-del-mes {
-  padding: 0 0;
+  padding: 0;
 }
 
 .card-ciutat-del-mes p,
 .card-ciutat-del-mes h3 {
   padding: 0 1rem;
 }
-.intro-temporades p {
-  text-align: justify;
-}
 
 .grid-blog article {
   display: block;
-  margin-top: 0rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 
@@ -145,8 +146,8 @@ figcaption {
 }
 
 .connecta h2 {
-  padding-bottom: 0;
   margin: 0;
+  padding-bottom: 0;
 }
 
 /* --------------------------------------------------
@@ -173,9 +174,14 @@ figcaption {
   object-fit: cover;
 }
 
-  .article-content p{
-    margin-bottom: 1rem;
-  }
+.article-content {
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.article-content p {
+  margin-bottom: 1rem;
+}
 
 .copyright {
   position: absolute;
@@ -184,11 +190,6 @@ figcaption {
   padding: 0.2rem 0.4rem;
   font-size: 0.75rem;
   background-color: rgba(250, 250, 250, 0.5);
-}
-
-.article-content {
-  padding: 1rem;
-  background-color: #ffffff;
 }
 
 /* --------------------------------------------------
@@ -219,9 +220,9 @@ figcaption {
 
 .btn {
   display: inline-block;
-  margin-left: auto;
-  margin-top: auto;
   align-self: flex-end;
+  margin-top: auto;
+  margin-left: auto;
   padding: 0.6rem 1.4rem;
   border-radius: 0.3rem;
   font-weight: 500;
@@ -257,8 +258,8 @@ fieldset fieldset {
 }
 
 fieldset fieldset ul {
-  padding-left: 2rem;
   margin-left: 0;
+  padding-left: 2rem;
   list-style-type: none;
 }
 
@@ -287,9 +288,9 @@ input + label {
 input:not([type="radio"]):not([type="checkbox"]),
 select {
   width: 100%;
-  padding: 0.5rem;
   margin-bottom: 1rem;
-  border: solid 1px var(--body-color);
+  padding: 0.5rem;
+  border: 1px solid var(--body-color);
   outline: none;
 }
 
@@ -297,7 +298,7 @@ textarea {
   width: 100%;
   height: 10rem;
   padding: 0.5rem;
-  border: solid 1px var(--body-color);
+  border: 1px solid var(--body-color);
   outline: none;
 }
 
@@ -324,13 +325,12 @@ p.mandatory > span {
 }
 
 .botonera {
-  text-align: right;
   padding: 0 1rem;
+  text-align: right;
 }
 
 button.btn-form {
   display: inline-block;
-  text-align: right;
   width: auto;
   margin: 1rem 0;
   padding: 0.6rem 1.4rem;
@@ -389,13 +389,9 @@ select:required:user-valid {
   border: 1px solid #4caf50;
 }
 
-.intro p {
-  text-align: justify;
-}
 /* --------------------------------------------------
    RUTES DETALL (DIES)
 -------------------------------------------------- */
-
 .ruta-dia {
   display: flex;
   flex-direction: column;
@@ -414,6 +410,7 @@ select:required:user-valid {
 .article-ruta p {
   padding: 0 1rem;
 }
+
 .ruta-dia h3 {
   margin-bottom: 1rem;
   padding-left: 1rem;
@@ -434,8 +431,8 @@ select:required:user-valid {
 }
 
 .ruta-dia iframe {
-  grid-column: 2;
   width: 100%;
+  grid-column: 2;
 }
 
 /* --------------------------------------------------
@@ -487,52 +484,53 @@ select:required:user-valid {
 /* --------------------------------------------------
    LINKS
 -------------------------------------------------- */
-.links section{
-  padding:1rem;
-border:none;
+.links section {
+  padding: 1rem;
+  border: none;
 }
 
-.links h2{
+.links h2 {
   padding: 0;
 }
 
-.links li{
+.links ul {
+  padding-left: 15px;
+  list-style: none;
+}
+
+.links li {
   padding-left: 1rem;
 }
 
-.links ul{
-  list-style: none;
-  padding-left:15px ;
-}
-
 .link-ciutat {
-  display: flex;            
-  align-items: center;      
-  gap: 0.5rem;              
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.link-ciutat .fi{
-  font-size: 1.8rem; 
-   line-height:3; 
+.link-ciutat .fi {
+  font-size: 1.8rem;
+  line-height: 3;
 }
 
-.link-ciutat h2{
-  margin:0;
+.link-ciutat h2 {
+  margin: 0;
   font-size: 1.8rem;
 }
 
-.links-ciutat{
+.links-ciutat {
   display: grid;
   grid-template-columns: 1fr;
 }
+
 /************* MEDIA QUERY TAULETA/ESCRIPTORI ********/
 
 @media (min-width: 768px) {
-
-.container {
-    padding-left:1rem;
+  .container {
+    padding-left: 1rem;
     padding-right: 1rem;
   }
+
   .info,
   .rutes,
   .gastronomia,
@@ -561,15 +559,16 @@ border:none;
 
   .llistat-temporades > h2 {
     padding-top: 0;
+    padding-right: 0;
     padding-bottom: 1rem;
     padding-left: 0;
-    padding-right: 0;
   }
 
   .ruta-dia {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
   }
+
   .grid-blog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -583,24 +582,23 @@ border:none;
   .article-body {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    padding: 0;
-    flex: 1;
     align-items: stretch;
+    flex: 1;
+    padding: 0;
+    height: 100%;
   }
 
   .article-body img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
     display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 
   .article-content {
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: space-between;
     justify-content: flex-start;
   }
 
@@ -625,14 +623,15 @@ border:none;
   .ciutat-del-mes-container {
     display: flex;
     flex-direction: row;
-    background-color: var(--light);
     margin-top: 0;
+    background-color: var(--light);
   }
 
   .card-ciutat-del-mes {
-    padding: 2rem;
     margin-left: 0;
+    padding: 2rem;
   }
+
   .connecta,
   fieldset {
     background-color: var(--offwhite);
@@ -643,35 +642,30 @@ border:none;
     padding-right: 0;
   }
 
-  .ruta-dia {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-  }
-
   .ruta-dia iframe {
     padding: 1rem;
   }
 
-.links-ciutat{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  .links-ciutat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 2rem 0;
-}
-.links section{
-  padding:1rem;
-  border-top: #3b2a28 solid 0.5px;
-  border-bottom: #3b2a28 solid 0.5px;
-  border-left: #3b2a28 solid 0.5px;
-  border-right: #3b2a28 solid 0.5px;
-}
+  }
+
+  .links section {
+    padding: 1rem;
+    border-top: 0.5px solid #3b2a28;
+    border-right: 0.5px solid #3b2a28;
+    border-bottom: 0.5px solid #3b2a28;
+    border-left: 0.5px solid #3b2a28;
+  }
 }
 
 @media (min-width: 1200px) {
-
   .container {
     max-width: 1000px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding: 0;
   }
 
@@ -681,6 +675,6 @@ border:none;
   .info,
   .gastronomia,
   .imprescindibles {
-    padding: 2rem 0rem;
+    padding: 2rem 0;
   }
 }

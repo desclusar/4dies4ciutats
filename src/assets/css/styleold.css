@@ -1,0 +1,686 @@
+/* --------------------------------------------------
+   IMPORTS
+-------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "variables.css";
+@import "./components/_header.css";
+@import "./components/_footer.css";
+
+/* --------------------------------------------------
+   RESET
+-------------------------------------------------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------
+   BASE HTML / BODY / TIPOGRAFIA
+-------------------------------------------------- */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font);
+  line-height: 1.6;
+  color: var(--body-color);
+  font-weight: 400;
+  background-color: var(--body-bg);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+a {
+  color: var(--body-color);
+  text-decoration: none;
+}
+
+a:hover {
+  border: none;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+section > h2 {
+  padding-left: 1rem;
+}
+
+/* --------------------------------------------------
+   LAYOUT GENERAL
+-------------------------------------------------- */
+.container {
+  max-width: 100%;
+}
+
+/* -------------------------------------------------
+   MULTIMÈDIA I ELEMENTS GENERALS
+-------------------------------------------------- */
+.img-fluid {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  border: none;
+  aspect-ratio: 16 / 9;
+  margin-top: 1rem;
+}
+
+figcaption {
+  font-size: 0.9rem;
+}
+
+.intro,
+.intro-temporades,
+.intro-desc,
+.info,
+.gastronomia,
+.imprescindibles {
+  padding: 2rem 1rem;
+}
+
+.intro-desc p {
+  text-align: justify;
+}
+.rutes h2 {
+  padding-left: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+
+.card-ciutat-del-mes {
+  padding: 0 0;
+}
+
+.card-ciutat-del-mes p,
+.card-ciutat-del-mes h3 {
+  padding: 0 1rem;
+}
+.intro-temporades p {
+  text-align: justify;
+}
+
+.grid-blog article {
+  display: block;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+.connecta {
+  padding-top: 2rem;
+  background-color: var(--light);
+}
+
+.connecta h2 {
+  padding-bottom: 0;
+  margin: 0;
+}
+
+/* --------------------------------------------------
+   ARTICLES
+-------------------------------------------------- */
+.article-body {
+  display: block;
+  transition: box-shadow 0.3s ease;
+}
+
+.article-body:hover {
+  box-shadow: 0 0 10px #3b2a28;
+}
+
+.article-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  .article-content p{
+    margin-bottom: 1rem;
+  }
+
+.copyright {
+  position: absolute;
+  right: 5px;
+  bottom: 15px;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.75rem;
+  background-color: rgba(250, 250, 250, 0.5);
+}
+
+.article-content {
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+/* --------------------------------------------------
+   CIUTAT DEL MES
+-------------------------------------------------- */
+.ciutat-del-mes {
+  background-color: var(--offwhite);
+}
+
+.ciutat-del-mes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.ciutat-del-mes-container .img-ciutat-del-mes {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.ciutat-del-mes-container .card-ciutat-del-mes {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.btn {
+  display: inline-block;
+  margin-left: auto;
+  margin-top: auto;
+  align-self: flex-end;
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: #4a332fef;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4a332f94;
+}
+
+/* --------------------------------------------------
+   FORMULARI CONTACTE AMB NOSALTRES
+-------------------------------------------------- */
+form.contact {
+  width: 100%;
+}
+
+fieldset {
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--light);
+}
+
+fieldset fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+fieldset fieldset ul {
+  padding-left: 2rem;
+  margin-left: 0;
+  list-style-type: none;
+}
+
+fieldset fieldset li {
+  margin-bottom: 0;
+}
+
+legend {
+  padding: 0.2rem;
+  font-size: 1rem;
+  background-color: var(--bg-rutes);
+  color: var(--offwhite);
+  border: 1px solid var(--secondary);
+}
+
+legend:not(fieldset fieldset legend) {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+input + label {
+  font-weight: normal;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: solid 1px var(--body-color);
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 0.5rem;
+  border: solid 1px var(--body-color);
+  outline: none;
+}
+
+.out-fieldset {
+  padding: 1rem 0;
+}
+
+p.info-legal,
+p.mandatory {
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+input[type="checkbox"] {
+  margin-left: 1rem;
+}
+
+label span,
+fieldset fieldset span,
+p.mandatory > span {
+  color: #ff0000;
+}
+
+.botonera {
+  text-align: right;
+  padding: 0 1rem;
+}
+
+button.btn-form {
+  display: inline-block;
+  text-align: right;
+  width: auto;
+  margin: 1rem 0;
+  padding: 0.6rem 1.4rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  appearance: none;
+  background-color: #4a332fef;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-form:hover {
+  background-color: #4a332f94;
+}
+
+.half,
+.half-2n {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+/* --------------------------------------------------
+   FOCUS I VALIDACIÓ FORMULARI
+-------------------------------------------------- */
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 8px var(--hover);
+}
+
+input::placeholder {
+  color: #9f9f9f;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+input[type="text"]:required:user-invalid,
+input[type="email"]:required:user-invalid,
+input[type="tel"]:required:user-invalid,
+input[type="date"]:required:user-invalid,
+textarea:required:user-invalid,
+select:required:user-invalid {
+  border: 1px solid #ff0000;
+}
+
+input[type="text"]:required:user-valid,
+input[type="email"]:required:user-valid,
+input[type="tel"]:required:user-valid,
+input[type="date"]:required:user-valid,
+textarea:required:user-valid,
+select:required:user-valid {
+  border: 1px solid #4caf50;
+}
+
+.intro p {
+  text-align: justify;
+}
+/* --------------------------------------------------
+   RUTES DETALL (DIES)
+-------------------------------------------------- */
+
+.ruta-dia {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  background-color: var(--bg-rutes);
+  color: var(--light);
+}
+
+.article-ruta {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-ruta p {
+  padding: 0 1rem;
+}
+.ruta-dia h3 {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  color: var(--h3-rutes);
+}
+
+.ruta-dia p {
+  max-width: 65ch;
+  text-align: justify;
+  line-height: 1.6;
+  hyphens: auto;
+  text-justify: inter-word;
+}
+
+.ruta-dia p a {
+  color: var(--light);
+  text-decoration: underline;
+}
+
+.ruta-dia iframe {
+  grid-column: 2;
+  width: 100%;
+}
+
+/* --------------------------------------------------
+   FONS SECCIONS
+-------------------------------------------------- */
+.info {
+  background-color: #f0dcc3;
+}
+
+.rutes {
+  background-color: #ede2d2;
+}
+
+.gastronomia {
+  background-color: #e2c9b3;
+}
+
+.imprescindibles {
+  color: #000000;
+}
+
+/* --------------------------------------------------
+   GALERIA NADAL (GLightbox)
+-------------------------------------------------- */
+.galeria-nadal {
+  padding: 2rem 1rem;
+}
+
+.galeria-nadal h2 {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.galeria-grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------
+   LINKS
+-------------------------------------------------- */
+.links section{
+  padding:1rem;
+border:none;
+}
+
+.links h2{
+  padding: 0;
+}
+
+.links li{
+  padding-left: 1rem;
+}
+
+.links ul{
+  list-style: none;
+  padding-left:15px ;
+}
+
+.link-ciutat {
+  display: flex;            
+  align-items: center;      
+  gap: 0.5rem;              
+}
+
+.link-ciutat .fi{
+  font-size: 1.8rem; 
+   line-height:3; 
+}
+
+.link-ciutat h2{
+  margin:0;
+  font-size: 1.8rem;
+}
+
+.links-ciutat{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/************* MEDIA QUERY TAULETA/ESCRIPTORI ********/
+
+@media (min-width: 768px) {
+
+.container {
+    padding-left:1rem;
+    padding-right: 1rem;
+  }
+  .info,
+  .rutes,
+  .gastronomia,
+  .imprescindibles {
+    padding: 2rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .intro,
+  .intro-temporades,
+  .intro-desc,
+  .info,
+  .gastronomia,
+  .imprescindibles {
+    padding: 2rem 1rem;
+  }
+
+  .grid-blog > article,
+  .grid-aside > article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .llistat-temporades > h2 {
+    padding-top: 0;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ruta-dia {
+    display: flex;
+    flex-direction: row;
+  }
+  .grid-blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    align-items: stretch;
+  }
+
+  .article-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    flex: 1;
+    align-items: stretch;
+  }
+
+  .article-body img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    display: block;
+  }
+
+  .article-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .grid-blog article:first-child {
+    padding-top: 0;
+    grid-column: 1 / span 3;
+  }
+
+  .grid-blog article:first-child .article-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .grid-blog article:first-child .article-image {
+    width: 65%;
+  }
+
+  .grid-blog article:first-child .article-content {
+    width: 35%;
+  }
+
+  .ciutat-del-mes-container {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--light);
+    margin-top: 0;
+  }
+
+  .card-ciutat-del-mes {
+    padding: 2rem;
+    margin-left: 0;
+  }
+  .connecta,
+  fieldset {
+    background-color: var(--offwhite);
+  }
+
+  .intro-desc {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ruta-dia {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .ruta-dia iframe {
+    padding: 1rem;
+  }
+
+.links-ciutat{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    margin: 2rem 0;
+}
+.links section{
+  padding:1rem;
+  border-top: #3b2a28 solid 0.5px;
+  border-bottom: #3b2a28 solid 0.5px;
+  border-left: #3b2a28 solid 0.5px;
+  border-right: #3b2a28 solid 0.5px;
+}
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .intro,
+  .intro-temporades,
+  .intro-desc,
+  .info,
+  .gastronomia,
+  .imprescindibles {
+    padding: 2rem 0rem;
+  }
+}
