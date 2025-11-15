@@ -12,14 +12,14 @@
 </head>
 
 <body class="home">
+  <a class="skip-link" href="#main-content">Salta al contingut principal</a>
+
   <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js"></script>
   <script src="./scripts/cookieconsent-config.js"></script>
-  
-  <!--<script type="module" src="/src/scripts/popup.js"></script>-->
 
   <include src="src/includes/_header-home.html"></include>
-  
-  <main>
+
+  <main id="main-content">
     <div class="container">
       <section class="intro-temporades">
         <h1>4 Dies, 4 Ciutats: descobreix Europa en petites grans escapades</h1>
@@ -36,32 +36,45 @@
         <h2>Una estació, quatre ciutats</h2>
         <div class="grid-blog">
           <article>
-            <a href="./categoria/index.html">
-              <div class="article-body">
-                <div class="article-image">
-                  <img src="/src/assets/img/nadal.jpg" width="1000" height="563" alt="Un llimoner" class="img-fluid">
-                  <div class="copyright">Foto de <a href="https://unsplash.com/es/@dylu">Jacek Dylag</a> a <a
-                      href="https://unsplash.com/es/fotos/edificio-de-hormigon-marron-durante-el-dia-FjRuqY6LZhk">Unsplash</a>
-                  </div>
-                </div>
-                <div class="article-content">
-                  <a href="./categoria/index.html">
-                    <h3>Nadal a Europa: màgia, llums i tradició</h3>
-                  </a>
-                  <p>Durant el Nadal, ciutats com Londres, Praga, Tallinn i Bruges es vesteixen de llum i tradició. Els
-                    mercats, la música i l’ambient festiu converteixen cada racó en un conte d’hivern ple d’encant i
-                    calidesa.</p>
-                  <a href="./categoria/index.html" class="btn">Ciutats Nadal</a>
+            <div class="article-body">
 
+              <div class="article-image">
+                <a href="./assets/img/hq/nadal-hq.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Kraków de nit nevant" data-gallery="nadal"
+                  data-title="Plaça principal d’una ciutat europea amb edificis històrics i neu caient a la nit."><img
+                    src="./assets/img/nadal.jpg" width="1000" height="563"
+                    alt="Plaça principal d’una ciutat europea amb edificis històrics i neu caient a la nit"
+                    class="img-fluid"></a>
+                <div class="copyright">Foto de <a href="https://unsplash.com/es/@dylu">Jacek Dylag</a> a <a
+                    href="https://unsplash.com/es/fotos/edificio-de-hormigon-marron-durante-el-dia-FjRuqY6LZhk">Unsplash</a>
                 </div>
               </div>
-            </a>
+
+              <div class="article-content">
+
+                <h3>Nadal a Europa: màgia, llums i tradició</h3>
+
+                <p>Durant el Nadal, ciutats com Londres, Praga, Tallinn i Bruges es vesteixen de llum i tradició. Els
+                  mercats, la música i l’ambient festiu converteixen cada racó en un conte d’hivern ple d’encant i
+                  calidesa.</p>
+                <a href="./categoria/index.html" class="btn">Ciutats Nadal</a>
+
+              </div>
+            </div>
+
           </article>
 
           <article>
             <div class="article-body">
+
               <div class="article-image">
-                <img src="/src/assets/img/primavera.jpg" width="1000" height="563" alt="Un llimoner" class="img-fluid">
+                <a href="./assets/img/hq/primavera-hq.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Tulipes als canals d'Amsterdam" data-gallery="primavera"
+                  data-title="Tulipes de colors davant d’un canal amb les típiques façanes històriques d’Amsterdam"><img
+                    src="./assets/img/primavera.jpg" width="1000" height="563"
+                    alt="Primer pla de tulipes de colors amb un canal i edificis històrics al fons en un dia assolellat"
+                    class="img-fluid"></a>
+
                 <div class="copyright">Foto de <a href="https://unsplash.com/es/@annina1979">Anna Biasoli</a> a <a
                     href="https://unsplash.com/es/fotos/flores-de-tulipan-de-colores-variados-jU_G_va7l4s">Unsplash</a>
                 </div>
@@ -80,10 +93,18 @@
           <article>
             <div class="article-body">
               <div class="article-image">
-                <img src="/src/assets/img/estiu.jpg" width="1000" height="563" alt="Un llimoner" class="img-fluid">
+
+                <a href="./assets/img/hq/estiu-hq.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Carrers d'Edimburg" data-gallery="estiu"
+                  data-title="Carrer empedrat d'Edimburg amb arquitectura històrica, botigues i banderoles de colors, típic del Regne Unit"><img
+                    src="./assets/img/estiu.jpg" width="1000" height="563"
+                    alt="Carrer empedrat amb arquitectura històrica, botigues i banderoles de colors, típic del Regne Unit"
+                    class="img-fluid"></a>
+
                 <div class="copyright">Foto de <a href="https://unsplash.com/es/@exylo">Maxime Galliot</a> a <a
                     href="https://unsplash.com/es/fotos/una-calle-empedrada-bordeada-de-edificios-historicos-01VpHjtqBHE">Unsplash</a>
                 </div>
+
               </div>
               <div class="article-content">
                 <h3>Estiu a Europa: llum, mar i aventura</h3>
@@ -98,7 +119,14 @@
           <article>
             <div class="article-body">
               <div class="article-image">
-                <img src="/src/assets/img/tardor.jpg" width="1000" height="563" alt="Un llimoner" class="img-fluid">
+
+                <a href="./assets/img/hq/tardor-hq.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Edifici històric de Munic a la tardor" data-gallery="tardor"
+                  data-title="Cúpules d’un edifici d’estil europeu antic envoltat de fullatge de tardor sota un cel gris de Munic"><img
+                    src="./assets/img/tardor.jpg" width="1000" height="563"
+                    alt="Edifici amb grans cúpules verdes envoltat d’arbres amb colors de tardor en un dia ennuvolat"
+                    class="img-fluid"></a>
+
                 <div class="copyright">Foto de <a href="https://unsplash.com/es/@chaosvera">Vera</a> a <a
                     href="https://unsplash.com/es/fotos/un-gran-edificio-con-una-cupula-verde-en-la-parte-superior-PURWUK1dOS0">Unsplash</a>
                 </div>
@@ -123,9 +151,10 @@
         <h2>La ciutat del mes</h2>
         <div class="ciutat-del-mes-container">
           <div class="img-ciutat-del-mes">
-            <a href="./assets/img/hq/mes-novembre-paris-hq.jpg" class="glightbox" data-gallery="novembre-paris"
+            <a href="./assets/img/hq/mes-novembre-paris-hq.jpg" class="glightbox"
+              aria-label="Obrir imatge ampliada: París al novembre" data-gallery="novembre-paris"
               data-title="Vista de la Torre Eiffel des d’un carrer parisenc flanquejat per edificis clàssics amb balcons de ferro forjat i arbres amb fulles daurades de tardor sota un cel blau amb núvols">
-              <img src="./assets/img/mes-novembre-paris.jpg" width="563" height="1000" alt="Un llimoner"
+              <img src="./assets/img/mes-novembre-paris.jpg" width="563" height="1000" alt="Torre Eiffel vista en pla contrapicat des d’un carrer proper"
                 class="img-fluid"></a>
             <div class="copyright">Foto de <a href="https://unsplash.com/es/@danieljschwarz">Daniel J. Schwarz</a> a
               <a
@@ -201,10 +230,7 @@
 
         </div>
       </div>
-
-
     </section>
-    </div>
 
   </main>
   <include src="src/includes/_footer.html"></include>
