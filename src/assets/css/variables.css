@@ -15,4 +15,5 @@
   --bg-rutes: #3b2a28;
   --h3-rutes: rgb(245, 222, 179);
   --size: clamp(40px, 7vw, 96px);
+  --mida-plec:50px;
 }
