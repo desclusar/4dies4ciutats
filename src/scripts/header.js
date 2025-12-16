@@ -217,7 +217,6 @@ const headerImages = {
   }
 };
 
-// 2. Funció per carregar la imatge correcta
 function setHeaderImage() {
   const bodyClassList = document.body.classList;
   let currentKey = 'default';
@@ -230,17 +229,23 @@ function setHeaderImage() {
     }
   }
 
-  // 3. Selecciono els elements del DOM
   const mobileSource = document.getElementById('bg-mobile');
   const desktopImg = document.getElementById('bg-desktop');
 
   if (mobileSource && desktopImg) {
-    // Injecto les rutes
+
+    desktopImg.classList.remove('is-loaded');
+    desktopImg.onload = () => {
+      desktopImg.classList.add('is-loaded');
+    };
+
     mobileSource.srcset = headerImages[currentKey].mobile;
     desktopImg.src = headerImages[currentKey].desktop;
-    
-    // Opcional: Afegeixo (intento) el alt també dinàmicament
     desktopImg.alt = `Imatge de capçalera de ${currentKey.replace('det-', '')}`;
+
+    if (desktopImg.complete) {
+       desktopImg.classList.add('is-loaded');
+    }
   }
 }
 
