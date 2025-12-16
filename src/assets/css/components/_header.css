@@ -430,9 +430,9 @@ svg {
 
   .submenu {
     position: absolute;
-    top: calc(
-      100% + 2px
-    ); /*Volia donar espai pero llavors enre els dos hi ha uns pixels en el que el submenu despareix*/
+    top: calc(100% + 2px);
+    left: 50%;
+    transform: translateX(-50%);
     padding: 0.5rem 0;
     margin: 0;
     min-width: 180px;
