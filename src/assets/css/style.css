@@ -134,6 +134,10 @@ figcaption {
   padding: 0 1rem;
 }
 
+.ciutat-del-mes h2{
+  padding-left:1rem;
+}
+
 .grid-blog article {
   display: block;
   margin-top: 0;
@@ -250,20 +254,20 @@ figcaption {
   gap: 2rem;
 }
 
+/* A la versió de mòbil el clip-path de la fletcha mira cap avall*/
 .ciutat-del-mes-container .img-ciutat-del-mes {
   flex: 1 1 45%;
   position: relative;
   clip-path: polygon(
-  0% 20%,
-  60% 20%,
-  60% 0%,
-  100% 50%,
-  60% 100%,
-  60% 80%,
-  0% 80%
-);
+    20% 0%,    
+    20% 60%,   
+    0% 60%,   
+    50% 100%, 
+    100% 60%, 
+    80% 60%,  
+    80% 0%    
+  );
 }
-
 
 .ciutat-del-mes-container .card-ciutat-del-mes {
   flex: 1 1 50%;
@@ -278,6 +282,7 @@ figcaption {
   align-self: flex-end;
   margin-top: auto;
   margin-left: auto;
+  
   padding: 0.6rem 1.4rem;
   border-radius: 0.3rem;
   font-weight: 500;
@@ -285,6 +290,10 @@ figcaption {
   background-color: #4a332fef;
   color: #ffffff;
   transition: background-color 0.3s ease;
+}
+
+.ciutat-del-mes-container .btn{
+  margin:1rem;
 }
 
 .btn:hover {
@@ -695,11 +704,35 @@ select:required:user-valid {
     gap:0;
     margin-top: 0;
     background-color: var(--light);
+    align-items:stretch;
   }
 
+    .ciutat-del-mes-container .btn{
+  margin-top: auto;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.ciutat-del-mes-container .img-ciutat-del-mes {
+  flex: 1 1 45%;
+  position: relative;
+  clip-path: polygon(
+  0% 20%,
+  60% 20%,
+  60% 0%,
+  100% 50%,
+  60% 100%,
+  60% 80%,
+  0% 80%
+);
+}
   .card-ciutat-del-mes {
     margin-left: 0;
     padding: 2rem;
+  }
+
+  .ciutat-del-mes h2{
+    padding-left: 0;
   }
 
   .connecta,
@@ -751,6 +784,7 @@ select:required:user-valid {
   .imprescindibles {
     padding: 2rem 0;
   }
+
 }
 
 
