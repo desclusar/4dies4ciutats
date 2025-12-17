@@ -269,6 +269,17 @@ figcaption {
   );
 }
 
+/*Al fer el clip-path el copyright de la imatge queda retallat amb el tracto especificament aquest cas*/
+.ciutat-del-mes-container .img-ciutat-del-mes .copyright {
+  bottom: auto;     
+  right: auto;
+  top: 10px;      
+  left: 50%;       
+  transform: translateX(-50%);
+  white-space: nowrap; 
+  z-index: 10;
+}
+
 .ciutat-del-mes-container .card-ciutat-del-mes {
   flex: 1 1 50%;
   display: flex;
@@ -726,6 +737,15 @@ select:required:user-valid {
   0% 80%
 );
 }
+
+.ciutat-del-mes-container .img-ciutat-del-mes .copyright { 
+    top: auto;             
+    transform: none;          
+    left: 1rem;              
+    bottom: 25%;               
+    right: auto;              
+  }
+
   .card-ciutat-del-mes {
     margin-left: 0;
     padding: 2rem;
