@@ -183,7 +183,7 @@ figcaption {
     0 100%, 
     0 var(--mida-plec)
   );
-  /* Animació suau per tornar a la forma original */
+
   transition: clip-path 0.5s ease;
 }
 
@@ -199,14 +199,12 @@ figcaption {
   border-bottom-right-radius: 5px;
   
   transition: opacity 0.3s ease, transform 0.5s ease;
-  pointer-events: none; /* Perquè no interfereixi amb el click */
+  pointer-events: none; /* Així no interfereix amb el click */
 }
 
 /* --- ANIMACIÓ AL HOVER --- */
 
-/* Quan passem el ratolí per sobre de la targeta sencera (.article-body) */
 .article-body:hover .article-image img {
-  /* Restaurem el rectangle complet (0 0 a les cantonades) */
   clip-path: polygon(
     0 0, 
     100% 0, 
@@ -216,10 +214,9 @@ figcaption {
   );
 }
 
-/* Fem desaparèixer el triangle del plec */
 .article-body:hover .article-image::after {
   opacity: 0;
-  transform: translate(-50%, -50%); /* Efecte visual com si es retirés */
+  transform: translate(-50%, -50%);
 }
 
 
