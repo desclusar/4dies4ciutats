@@ -1,7 +1,6 @@
 /* --------------------------------------------------
    IMPORTS
 -------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "variables.css";
 @import "./components/_header.css";
 @import "./components/_footer.css";
@@ -134,8 +133,8 @@ figcaption {
   padding: 0 1rem;
 }
 
-.ciutat-del-mes h2{
-  padding-left:1rem;
+.ciutat-del-mes h2 {
+  padding-left: 1rem;
 }
 
 .grid-blog article {
@@ -177,10 +176,10 @@ figcaption {
   height: 100%;
   object-fit: cover;
   clip-path: polygon(
-    var(--mida-plec) 0, 
-    100% 0, 
-    100% 100%, 
-    0 100%, 
+    var(--mida-plec) 0,
+    100% 0,
+    100% 100%,
+    0 100%,
     0 var(--mida-plec)
   );
 
@@ -188,16 +187,21 @@ figcaption {
 }
 
 .article-image::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: var(--mida-plec);
   height: var(--mida-plec);
-  
-  background: linear-gradient(135deg, #cacaca 50%, rgba(0,0,0,0.4) 55%, rgba(0,0,0,0) 100%);
+
+  background: linear-gradient(
+    135deg,
+    #cacaca 50%,
+    rgba(0, 0, 0, 0.4) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
   border-bottom-right-radius: 5px;
-  
+
   transition: opacity 0.3s ease, transform 0.5s ease;
   pointer-events: none; /* Així no interfereix amb el click */
 }
@@ -205,20 +209,13 @@ figcaption {
 /* --- ANIMACIÓ AL HOVER --- */
 
 .article-body:hover .article-image img {
-  clip-path: polygon(
-    0 0, 
-    100% 0, 
-    100% 100%, 
-    0 100%, 
-    0 0
-  );
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .article-body:hover .article-image::after {
   opacity: 0;
   transform: translate(-50%, -50%);
 }
-
 
 .article-content {
   padding: 1rem;
@@ -256,24 +253,24 @@ figcaption {
   flex: 1 1 45%;
   position: relative;
   clip-path: polygon(
-    20% 0%,    
-    20% 60%,   
-    0% 60%,   
-    50% 100%, 
-    100% 60%, 
-    80% 60%,  
-    80% 0%    
+    20% 0%,
+    20% 60%,
+    0% 60%,
+    50% 100%,
+    100% 60%,
+    80% 60%,
+    80% 0%
   );
 }
 
 /*Al fer el clip-path el copyright de la imatge queda retallat amb el tracto especificament aquest cas*/
 .ciutat-del-mes-container .img-ciutat-del-mes .copyright {
-  bottom: auto;     
+  bottom: auto;
   right: auto;
-  top: 10px;      
-  left: 50%;       
+  top: 10px;
+  left: 50%;
   transform: translateX(-50%);
-  white-space: nowrap; 
+  white-space: nowrap;
   z-index: 10;
 }
 
@@ -290,7 +287,7 @@ figcaption {
   align-self: flex-end;
   margin-top: auto;
   margin-left: auto;
-  
+
   padding: 0.6rem 1.4rem;
   border-radius: 0.3rem;
   font-weight: 500;
@@ -300,8 +297,8 @@ figcaption {
   transition: background-color 0.3s ease;
 }
 
-.ciutat-del-mes-container .btn{
-  margin:1rem;
+.ciutat-del-mes-container .btn {
+  margin: 1rem;
 }
 
 .btn:hover {
@@ -601,7 +598,7 @@ select:required:user-valid {
   left: 0;
   background: #000;
   color: #fff;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   z-index: 9999;
 }
 
@@ -709,38 +706,38 @@ select:required:user-valid {
   .ciutat-del-mes-container {
     display: flex;
     flex-direction: row;
-    gap:0;
+    gap: 0;
     margin-top: 0;
     background-color: var(--light);
-    align-items:stretch;
+    align-items: stretch;
   }
 
-    .ciutat-del-mes-container .btn{
-  margin-top: auto;
-  margin-bottom: 0;
-  margin-right: 0;
-}
+  .ciutat-del-mes-container .btn {
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
 
-.ciutat-del-mes-container .img-ciutat-del-mes {
-  flex: 1 1 45%;
-  position: relative;
-  clip-path: polygon(
-  0% 20%,
-  60% 20%,
-  60% 0%,
-  100% 50%,
-  60% 100%,
-  60% 80%,
-  0% 80%
-);
-}
+  .ciutat-del-mes-container .img-ciutat-del-mes {
+    flex: 1 1 45%;
+    position: relative;
+    clip-path: polygon(
+      0% 20%,
+      60% 20%,
+      60% 0%,
+      100% 50%,
+      60% 100%,
+      60% 80%,
+      0% 80%
+    );
+  }
 
-.ciutat-del-mes-container .img-ciutat-del-mes .copyright { 
-    top: auto;             
-    transform: none;          
-    left: 1rem;              
-    bottom: 25%;               
-    right: auto;              
+  .ciutat-del-mes-container .img-ciutat-del-mes .copyright {
+    top: auto;
+    transform: none;
+    left: 1rem;
+    bottom: 25%;
+    right: auto;
   }
 
   .card-ciutat-del-mes {
@@ -748,7 +745,7 @@ select:required:user-valid {
     padding: 2rem;
   }
 
-  .ciutat-del-mes h2{
+  .ciutat-del-mes h2 {
     padding-left: 0;
   }
 
@@ -766,10 +763,9 @@ select:required:user-valid {
     padding: 1rem;
   }
 
-.rutes h2 {
-  padding:0;
-
-}
+  .rutes h2 {
+    padding: 0;
+  }
   .links-ciutat {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -801,7 +797,4 @@ select:required:user-valid {
   .imprescindibles {
     padding: 2rem 0;
   }
-
 }
-
-
