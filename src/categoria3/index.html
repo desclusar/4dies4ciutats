@@ -7,12 +7,15 @@
   <meta name="description" content="Estiu a Europa: llum, mar i aventura">
   <title>4 dies, 4 ciutats | Estiu</title>
   <link rel="stylesheet" href="/src/assets/css/style.css">
-<link rel="shortcut icon" href="/src/assets/img/icons/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="/src/assets/img/icons/favicon.png" type="image/png">
 </head>
 
 <body class="cat-estiu">
-   <a class="skip-link" href="#main-content">Salta al contingut principal</a>
-  <include src="src/includes/_header.html"></include>
+  <a class="skip-link" href="#main-content">Salta al contingut principal</a>
+  <include src="src/includes/_header.html" locals='{
+    "bgImg": "/src/assets/img/estiu-header.jpg", 
+    "bgAlt": "Ulleres de sol sobre la sorra de la platja amb el mar i el cel desenfocats al fons"
+}'></include>
 
   <main id="main-content">
 
@@ -31,13 +34,14 @@
         </div>
 
         <div class="grid-blog">
-      
+
           <article>
             <div class="article-body">
               <div class="article-image">
-                <a href="../assets/img/estiu-reykjavik.jpg" class="glightbox" aria-label="Obrir imatge ampliada: Reykjavik a l'estiu" data-gallery="reykjavik-estiu"
+                <a href="../assets/img/estiu-reykjavik.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Reykjavik a l'estiu" data-gallery="reykjavik-estiu"
                   data-title="Vista panoràmica de Reykjavik amb muntanyes i cases de colors sota el sol de mitjanit">
-                  
+
                   <!--
                   <img
                     src="../assets/img/estiu-reykjavik.jpg" width="1000" height="563"
@@ -46,42 +50,26 @@
                   -->
 
                   <picture>
-                    <source
-                      type="image/avif"
-                      srcset="
+                    <source type="image/avif" srcset="
                         ../assets/img/estiu-reykjavik.jpg?as=avif&width=480 480w,
                         ../assets/img/estiu-reykjavik.jpg?as=avif&width=800 800w,
                         ../assets/img/estiu-reykjavik.jpg?as=avif&width=1000 1000w
-                      "
-                      sizes="(max-width: 600px) 100vw, 80vw"
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
+                      " sizes="(max-width: 600px) 100vw, 80vw" />
+                    <source type="image/webp" srcset="
                         ../assets/img/estiu-reykjavik.jpg?as=webp&width=480 480w,
                         ../assets/img/estiu-reykjavik.jpg?as=webp&width=800 800w,
                         ../assets/img/estiu-reykjavik.jpg?as=webp&width=1000 1000w
-                      "
-                      sizes="(max-width: 600px) 100vw, 80vw"
-                    />
-                    <img
-                      src="../assets/img/estiu-reykjavik.jpg?width=1000"
-                      srcset="
+                      " sizes="(max-width: 600px) 100vw, 80vw" />
+                    <img src="../assets/img/estiu-reykjavik.jpg?width=1000" srcset="
                         ../assets/img/estiu-reykjavik.jpg?width=480 480w,
                         ../assets/img/estiu-reykjavik.jpg?width=800 800w,
                         ../assets/img/estiu-reykjavik.jpg?width=1000 1000w
-                      "
-                      sizes="(max-width: 600px) 100vw, 80vw"
-                      width="1000"
-                      height="667"
+                      " sizes="(max-width: 600px) 100vw, 80vw" width="1000" height="667"
                       alt="Vista panoràmica de Reykjavik amb muntanyes i cases de colors sota el sol de mitjanit."
-                      class="img-fluid"
-                      decoding="async"
-                      loading="eager"
-                    />
+                      class="img-fluid" decoding="async" loading="eager" />
                   </picture>
 
-                  </a>
+                </a>
 
                 <div class="copyright">Foto de <a href="https://unsplash.com/es/@einarr05">Einar H. Reynis</a> a <a
                     href="https://unsplash.com/es/fotos/vista-aerea-de-los-edificios-de-la-ciudad-durante-el-dia-geYUKmAKZp0">Unsplash</a>
@@ -93,15 +81,16 @@
                   explorar cascades, volcans i geisers, però també ofereix una vida cultural vibrant, música i bon
                   ambient. Quatre dies són ideals per descobrir l’essència d’una ciutat petita envoltada de natura
                   infinita.</p>
-                  <a href="../det9/index.html" class="btn">Descobreix Reykjavík</a>
+                <a href="../det9/index.html" class="btn">Descobreix Reykjavík</a>
               </div>
             </div>
           </article>
-      
+
           <article>
             <div class="article-body">
               <div class="article-image">
-                <a href="../assets/img/estiu-dubrovnik.jpg" class="glightbox" aria-label="Obrir imatge ampliada: Dubrovnik a l'estiu" data-gallery="dubrovnik-estiu"
+                <a href="../assets/img/estiu-dubrovnik.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Dubrovnik a l'estiu" data-gallery="dubrovnik-estiu"
                   data-title="Muralles i mar turquesa de Dubrovnik amb el sol d’estiu">
                   <!--
                   <img
@@ -110,20 +99,13 @@
                     class="img-fluid">
                   -->
 
-                  <img
-                  src="../assets/img/estiu-dubrovnik.jpg?width=1000"
-                  srcset="
+                  <img src="../assets/img/estiu-dubrovnik.jpg?width=1000" srcset="
                     ../assets/img/estiu-dubrovnik.jpg?width=1000 1x,
                     ../assets/img/estiu-dubrovnik.jpg?width=2000 2x
-                  "
-                  width="1000"
-                  height="667"  
-                  alt="Muralles i mar turquesa de Dubrovnik amb el sol d’estiu."
-                  class="img-fluid"
-                  loading="lazy"
-                >
-                  
-                  </a>
+                  " width="1000" height="667" alt="Muralles i mar turquesa de Dubrovnik amb el sol d’estiu."
+                    class="img-fluid" loading="lazy">
+
+                </a>
                 <div class="copyright">Foto de <a href="https://unsplash.com/es/@oww">Geio Tischler</a> a <a
                     href="https://unsplash.com/es/fotos/vista-aerea-de-los-edificios-de-la-ciudad-cerca-del-cuerpo-de-agua-durante-el-dia-rjHTWXyhWcE">Unsplash</a>
                 </div>
@@ -133,15 +115,16 @@
                 <p>Dubrovnik, la “Perla de l’Adriàtic”, és un destí d’estiu irresistible. Les seves muralles, el mar
                   cristal·lí i els carrers empedrats creen un escenari ple de llum i vida. Ideal per passejar, banyar-se
                   en cales amagades i gaudir d’una ciutat que combina cultura, gastronomia i mediterraneïtat.</p>
-                  <a href="../det10/index.html" class="btn">Descobreix Dubrovnik</a>
+                <a href="../det10/index.html" class="btn">Descobreix Dubrovnik</a>
               </div>
             </div>
           </article>
-      
+
           <article>
             <div class="article-body">
               <div class="article-image">
-                <a href="../assets/img/estiu-edimburg.jpg" class="glightbox" aria-label="Obrir imatge ampliada: Edimburg a l'estiu" data-gallery="edimburg-estiu"
+                <a href="../assets/img/estiu-edimburg.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Edimburg a l'estiu" data-gallery="edimburg-estiu"
                   data-title="Vista del castell d’Edimburg durant el festival d’estiu amb el cel blau i verds turons">
                   <!--
                   <img
@@ -150,20 +133,14 @@
                     class="img-fluid">
                   -->
 
-                  <img
-                  src="../assets/img/estiu-edimburg.jpg?width=1000"
-                  srcset="
+                  <img src="../assets/img/estiu-edimburg.jpg?width=1000" srcset="
                     ../assets/img/estiu-edimburg.jpg?width=1000 1x,
                     ../assets/img/estiu-edimburg.jpg?width=2000 2x
-                  "
-                  width="1000"
-                  height="667"  
-                  alt="Vista del castell d’Edimburg durant el festival d’estiu amb el cel blau i verds turons."
-                  class="img-fluid"
-                  loading="lazy"
-                >
+                  " width="1000" height="667"
+                    alt="Vista del castell d’Edimburg durant el festival d’estiu amb el cel blau i verds turons."
+                    class="img-fluid" loading="lazy">
 
-                  </a>
+                </a>
                 <div class="copyright">Foto de <a href="https://unsplash.com/es/@fourcolourblack">Adam Wilson</a> a <a
                     href="https://unsplash.com/es/fotos/calton-hill-edimburgo-reino-unido-ktDODr-3tvY">Unsplash</a>
                 </div>
@@ -173,17 +150,18 @@
                 <p>Amb els seus turons verds i els festivals d’agost, Edimburg respira cultura a cada racó. Durant
                   quatre dies pots explorar el seu castell, els carrers medievals, museus i jardins, tot gaudint de
                   l’ambient únic de la capital escocesa en el seu moment més viu i lluminós.</p>
-                  <a href="../det11/index.html" class="btn">Descobreix Edimburg</a>
+                <a href="../det11/index.html" class="btn">Descobreix Edimburg</a>
               </div>
             </div>
           </article>
-      
+
           <article>
             <div class="article-body">
               <div class="article-image">
-                <a href="../assets/img/estiu-santorini.jpg" class="glightbox" aria-label="Obrir imatge ampliada: Santorini a l'estiu" data-gallery="santorini-estiu"
+                <a href="../assets/img/estiu-santorini.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Santorini a l'estiu" data-gallery="santorini-estiu"
                   data-title="Cases blanques i mar blau a Santorini sota el sol d’estiu">
-                  
+
                   <!--
                   <img
                     src="../assets/img/estiu-santorini.jpg" width="1000" height="563"
@@ -191,20 +169,13 @@
                     class="img-fluid">
                   -->
 
-                  <img
-                  src="../assets/img/estiu-santorini.jpg?width=1000"
-                  srcset="
+                  <img src="../assets/img/estiu-santorini.jpg?width=1000" srcset="
                     ../assets/img/estiu-santorini.jpg?width=1000 1x,
                     ../assets/img/estiu-santorini.jpg?width=2000 2x
-                  "
-                  width="1000"
-                  height="693"  
-                  alt="Cases blanques i mar blau a Santorini sota el sol d’estiu."
-                  class="img-fluid"
-                  loading="lazy"
-                >
-                
-                  </a>
+                  " width="1000" height="693" alt="Cases blanques i mar blau a Santorini sota el sol d’estiu."
+                    class="img-fluid" loading="lazy">
+
+                </a>
                 <div class="copyright">Foto de <a href="https://unsplash.com/es/@infinitexplorer">Heidi Kaden</a> a <a
                     href="https://unsplash.com/es/fotos/santorini-grecia-kYxgm42SQso">Unsplash</a>
                 </div>
@@ -214,7 +185,7 @@
                 <p>Santorini és l’essència de l’estiu mediterrani. Les seves cases blanques sobre penya-segats, el mar
                   blau intens i les postes de sol daurades creen un paisatge inoblidable. Ideal per relaxar-se, explorar
                   pobles costaners i viure quatre dies de calma i bellesa al cor de les illes gregues.</p>
-                  <a href="../det12/index.html" class="btn">Descobreix Santorini</a>
+                <a href="../det12/index.html" class="btn">Descobreix Santorini</a>
               </div>
             </div>
           </article>

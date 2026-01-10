@@ -11,8 +11,11 @@
 </head>
 
 <body class="cat-nadal">
-   <a class="skip-link" href="#main-content">Salta al contingut principal</a>
-  <include src="src/includes/_header.html"></include>
+  <a class="skip-link" href="#main-content">Salta al contingut principal</a>
+  <include src="src/includes/_header.html" locals='{
+    "bgImg": "/src/assets/img/cat-nadal.jpg", 
+    "bgAlt": "Canal il·luminat per Nadal al capvespre amb llums reflectides a l’aigua i parades als laterals"
+}'></include>
 
   <main id="main-content">
     <div class="container">
@@ -36,9 +39,10 @@
           <article>
             <div class="article-body">
               <div class="article-image">
-                <a href="../assets/img/nadal-londres.jpg" class="glightbox" aria-label="Obrir imatge ampliada: Londres per Nadal" data-gallery="londres-nadal"
+                <a href="../assets/img/nadal-londres.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Londres per Nadal" data-gallery="londres-nadal"
                   data-title="Carrers de Londres il·luminats amb decoracions de Nadal i un autobús vermell passant per Regent Street">
-                  
+
                   <!--
                   <img
                     src="../assets/img/nadal-londres.jpg" width="1000" height="563"
@@ -46,43 +50,27 @@
                     class="img-fluid">
                   -->
 
-                <picture>
-                    <source
-                      type="image/avif"
-                      srcset="
+                  <picture>
+                    <source type="image/avif" srcset="
                         ../assets/img/nadal-londres.jpg?as=avif&width=480 480w,
                         ../assets/img/nadal-londres.jpg?as=avif&width=800 800w,
                         ../assets/img/nadal-londres.jpg?as=avif&width=1000 1000w
-                      "
-                      sizes="(max-width: 600px) 100vw, 80vw"
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
+                      " sizes="(max-width: 600px) 100vw, 80vw" />
+                    <source type="image/webp" srcset="
                         ../assets/img/nadal-londres.jpg?as=webp&width=480 480w,
                         ../assets/img/nadal-londres.jpg?as=webp&width=800 800w,
                         ../assets/img/nadal-londres.jpg?as=webp&width=1000 1000w
-                      "
-                      sizes="(max-width: 600px) 100vw, 80vw"
-                    />
-                    <img
-                      src="../assets/img/nadal-londres.jpg?width=1000"
-                      srcset="
+                      " sizes="(max-width: 600px) 100vw, 80vw" />
+                    <img src="../assets/img/nadal-londres.jpg?width=1000" srcset="
                         ../assets/img/nadal-londres.jpg?width=480 480w,
                         ../assets/img/nadal-londres.jpg?width=800 800w,
                         ../assets/img/nadal-londres.jpg?width=1000 1000w
-                      "
-                      sizes="(max-width: 600px) 100vw, 80vw"
-                      width="1000"
-                      height="667"
+                      " sizes="(max-width: 600px) 100vw, 80vw" width="1000" height="667"
                       alt="Carrers de Londres il·luminats amb decoracions de Nadal i un autobús vermell passant per Regent Street."
-                      class="img-fluid"
-                      decoding="async"
-                      loading="eager"
-                    />
+                      class="img-fluid" decoding="async" loading="eager" />
                   </picture>
 
-                  </a>
+                </a>
                 <div class="copyright">Foto de <a href="https://unsplash.com/es/@andreasfelske">Andreas Felske</a> a <a
                     href="https://unsplash.com/es/fotos/una-vista-aerea-de-una-ciudad-por-la-noche-z5fkzpT4e9k">Unsplash</a>
                 </div>
@@ -101,9 +89,10 @@
           <article>
             <div class="article-body">
               <div class="article-image">
-                <a href="../assets/img/nadal-tallinn.jpg" class="glightbox" aria-label="Obrir imatge ampliada: Tallinn per Nadal" data-gallery="tallinn-nadal"
+                <a href="../assets/img/nadal-tallinn.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Tallinn per Nadal" data-gallery="tallinn-nadal"
                   data-title="Vista aèria de la plaça Raekoja de Tallinn amb el mercat de Nadal il·luminat i el casc antic cobert de neu">
-                  
+
                   <!--
                   <img
                     src="../assets/img/nadal-tallinn.jpg" width="1000" height="563"
@@ -111,17 +100,12 @@
                     class="img-fluid">
                   -->
 
-                        <img
-            src="../assets/img/nadal-tallinn.jpg?width=1000"
-            srcset="
+                  <img src="../assets/img/nadal-tallinn.jpg?width=1000" srcset="
               ../assets/img/nadal-tallinn.jpg?width=1000 1x,
               ../assets/img/nadal-tallinn.jpg?width=2000 2x
-            "
-            width="1000"
-            height="845"  alt="Vista aèria de la plaça Raekoja de Tallinn amb el mercat de Nadal il·luminat i el casc antic cobert de neu"
-            class="img-fluid"
-            loading="lazy"
-          > </a>
+            " width="1000" height="845"
+                    alt="Vista aèria de la plaça Raekoja de Tallinn amb el mercat de Nadal il·luminat i el casc antic cobert de neu"
+                    class="img-fluid" loading="lazy"> </a>
                 <div class="copyright">Foto de <a href="https://unsplash.com/es/@dsumin">Dmitry Sumin</a> a <a
                     href="https://unsplash.com/es/fotos/una-vista-aerea-de-una-ciudad-nevada-por-la-noche-6t91NtWXlco">Unsplash</a>
                 </div>
@@ -140,28 +124,23 @@
           <article>
             <div class="article-body">
               <div class="article-image">
-                <a href="../assets/img/nadal-praga.jpg" class="glightbox" aria-label="Obrir imatge ampliada: Praga per Nadal" data-gallery="praga-nadal"
+                <a href="../assets/img/nadal-praga.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Praga per Nadal" data-gallery="praga-nadal"
                   data-title="Vista nocturna de Praga amb el castell i la catedral il·luminats sobre el riu Moldava durant l’hivern">
-                  
+
                   <!--
                   <img
                     src="../assets/img/nadal-praga.jpg" width="1000" height="563"
                     alt="Vista nocturna de Praga amb el castell i la catedral il·luminats sobre el riu Moldava durant l’hivern"
                     class="img-fluid">-->
-                  
-                                <img
-                    src="../assets/img/nadal-praga.jpg?width=1000"
-                    srcset="
+
+                  <img src="../assets/img/nadal-praga.jpg?width=1000" srcset="
                       ../assets/img/nadal-praga.jpg?width=1000 1x,
                       ../assets/img/nadal-praga.jpg?width=2000 2x
-                    "
-                    width="1000"
-                    height="845"  
+                    " width="1000" height="845"
                     alt="Vista nocturna de Praga amb el castell i la catedral il·luminats sobre el riu Moldava durant l’hivern"
-                    class="img-fluid"
-                    loading="lazy"
-                  >    
-                  </a>
+                    class="img-fluid" loading="lazy">
+                </a>
 
                 <div class="copyright">Foto de Julius Silver a <a
                     href="https://www.pexels.com/ca-es/foto/753337/">Pexels</a>
@@ -182,28 +161,23 @@
           <article>
             <div class="article-body">
               <div class="article-image">
-                <a href="../assets/img/nadal-bruges.jpg" class="glightbox" aria-label="Obrir imatge ampliada: Bruges per Nadal"   data-gallery="bruges-nadal"
+                <a href="../assets/img/nadal-bruges.jpg" class="glightbox"
+                  aria-label="Obrir imatge ampliada: Bruges per Nadal" data-gallery="bruges-nadal"
                   data-title="Parella passejant pels carrers empedrats de Bruges decorats amb garlandes i llums de Nadal davant de cafeteries i façanes històriques">
-                  
+
                   <!--
                   <img
                     src="../assets/img/nadal-bruges.jpg" width="1000" height="563"
                     alt="Parella passejant pels carrers empedrats de Bruges decorats amb garlandes i llums de Nadal davant de cafeteries i façanes històriques"
                     class="img-fluid">  -->
-                  
-                    <img
-                      src="../assets/img/nadal-bruges.jpg?width=1000"
-                      srcset="
+
+                  <img src="../assets/img/nadal-bruges.jpg?width=1000" srcset="
                         ../assets/img/nadal-bruges.jpg?width=1000 1x,
                         ../assets/img/nadal-bruges.jpg?width=2000 2x
-                      "
-                      width="1000"
-                      height="667"  
-                      alt="Parella passejant pels carrers empedrats de Bruges decorats amb garlandes i llums de Nadal davant de cafeteries i façanes històriques"
-                      class="img-fluid"
-                      loading="lazy"
-                  >  
-                  </a>
+                      " width="1000" height="667"
+                    alt="Parella passejant pels carrers empedrats de Bruges decorats amb garlandes i llums de Nadal davant de cafeteries i façanes històriques"
+                    class="img-fluid" loading="lazy">
+                </a>
 
                 <div class="copyright">Foto de <a href="https://unsplash.com/es/@nicolebaster">Nicole Baster</a> a <a
                     href="https://unsplash.com/es/fotos/mujer-y-hombre-caminando-sobre-el-pavimento-cerca-del-edificio-AY4ybem0IQI">Unsplash</a>

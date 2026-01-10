@@ -11,9 +11,14 @@
 </head>
 
 <body class="links">
-<a class="skip-link" href="#main-content">Salta al contingut principal</a>
+  <a class="skip-link" href="#main-content">Salta al contingut principal</a>
   <script type="module" src="../scripts/main.js"></script>
-  <include src="src/includes/_header.html"></include>
+
+  <include src="src/includes/_header.html" locals='{
+    "bgImg": "/src/assets/img/londres.jpg", 
+    "bgAlt": "Vista de Londres"
+}'></include>
+
   <main id="main-content">
 
     <div class="container">

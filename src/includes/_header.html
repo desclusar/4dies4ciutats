@@ -1,20 +1,14 @@
 <header id="main-header" class="site-header">
-<div class="header-bg-container">
-<picture>
-      <source 
-        id="bg-mobile" 
-        media="(max-width: 767px)" 
-        srcset="/src/assets/img/londres.jpg">
-      
-      <img 
-        id="bg-desktop" 
-        src="/src/assets/img/londres.jpg" 
-        alt="Imatge de capçalera" 
-        class="header-bg-img">
-  </picture>
+  <div class="header-bg-container">
+    <picture>
+      <source id="bg-mobile" media="(max-width: 767px)" srcset="/src/assets/img/londres.jpg">
 
-      </div>
-  
+      <img id="bg-desktop" src="{{bgImg}}" alt="{{bgAlt}} " class=" header-bg-img" loading="eager" fetchpriority="high">
+
+    </picture>
+
+  </div>
+
   <div class="header-container">
     <div class="header-inner">
       <!-- LOGO -->
@@ -33,14 +27,14 @@
         <span></span>
       </button>
  -->
-<button class="nav-toggle" aria-expanded="false" aria-label="Obrir menú principal">
+      <button class="nav-toggle" aria-expanded="false" aria-label="Obrir menú principal">
 
- <svg class="hamburger-icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
-    <rect class="top" x="0" y="0" rx="4" ry="4" width="100%" height="5" />
-    <rect class="middle" x="0" y="20" rx="4" ry="4" width="100%" height="5" />
-    <rect class="bottom" x="0" y="40" rx="4" ry="4" width="100%" height="5" />
-  </svg>
-</button>
+        <svg class="hamburger-icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+          <rect class="top" x="0" y="0" rx="4" ry="4" width="100%" height="5" />
+          <rect class="middle" x="0" y="20" rx="4" ry="4" width="100%" height="5" />
+          <rect class="bottom" x="0" y="40" rx="4" ry="4" width="100%" height="5" />
+        </svg>
+      </button>
 
 
     </div>
@@ -88,7 +82,7 @@
         </li>
 
         <li>
-           <a href="/src/links/index.html" data-page="links">Links</a>
+          <a href="/src/links/index.html" data-page="links">Links</a>
         </li>
       </ul>
     </nav>
