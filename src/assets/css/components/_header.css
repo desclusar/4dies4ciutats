@@ -1,83 +1,6 @@
 .home #main-header {
   background-image: none;
 }
-/*
-.cat-nadal #main-header {
-  background-image: url("../../img/cat-nadal.jpg");
-}
-.det-londres #main-header {
-  background-image: url("../../img/header_nadal.jpg");
-}
-.det-praga #main-header {
-  background-image: url("../../img/det_hd_praga.jpg");
-}
-.det-tallinn #main-header {
-  background-image: url("../../img/det_hd_tallinn.jpg");
-}
-.det-bruges #main-header {
-  background-image: url("../../img/det-bruges.jpg");
-}
-.cat-primavera #main-header {
-  background-image: url("../../img/primavera-header.jpg");
-}
-.det-roma #main-header {
-  background-image: url("../../img/primavera-roma.jpg");
-}
-.det-lisboa #main-header {
-  background-image: url("../../img/primavera-lisboa.jpg");
-}
-.det-amsterdam #main-header {
-  background-image: url("../../img/primavera-amsterdam.jpg");
-}
-.det-sevilla #main-header {
-  background-image: url("../../img/primavera-sevilla.jpg");
-}
-
-.cat-estiu #main-header {
-  background-image: url("../../img/estiu-header.jpg");
-}
-.det-reykjavik #main-header {
-  background-image: url("../../img/estiu-reykjavik.jpg");
-}
-.det-dubrovnik #main-header {
-  background-image: url("../../img/estiu-dubrovnik.jpg");
-}
-.det-edimburg #main-header {
-  background-image: url("../../img/estiu-edimburg.jpg");
-}
-.det-santorini #main-header {
-  background-image: url("../../img/estiu-santorini.jpg");
-}
-
-.cat-tardor #main-header {
-  background-image: url("../../img/tardor-header.jpg");
-}
-
-.det-budapest #main-header {
-  background-image: url("../../img/tardor-budapest.jpg");
-}
-.det-munic #main-header {
-  background-image: url("../../img/tardor-munic.jpg");
-}
-.det-paris #main-header {
-  background-image: url("../../img/tardor-paris.jpg");
-}
-.det-krakovia #main-header {
-  background-image: url("../../img/tardor-krakovia.jpg");
-}
-header {
-  position: relative;
-  padding: 0 1rem;
-  padding-bottom: 1rem;
-  min-height: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: var(--light);
-  background-size: cover;
-  background-position: center;
-}
-*/
 
 header {
   position: relative;
@@ -96,6 +19,12 @@ header::before {
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
   pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+header:has(.header-bg-img.is-loaded)::before {
+  opacity: 1;
 }
 
 header * {
@@ -104,7 +33,7 @@ header * {
 }
 
 .header-bg-container {
-  background-color: #2c2c2c;
+  background-color: var(--body-bg);
   position: absolute;
   top: 0;
   left: 0;
@@ -117,7 +46,7 @@ header * {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position:center;
+  object-position: center;
   opacity: 0; /*Comença sense veure's i vaig preparant la transició*/
   transition: opacity 0.6s ease-in-out;
 }
@@ -172,7 +101,6 @@ header * {
   background-color: var(--light);
   border-radius: 2px;
 }
-
 
 /*************** SVG *****************/
 svg {
@@ -247,7 +175,7 @@ svg {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-  } 
+  }
 }
 
 /********************************** DISSENY LOGO CSS **********************************/
@@ -261,15 +189,15 @@ svg {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-    width: clamp(60px, 10vw, 110px); 
-    height:auto
+  width: clamp(60px, 10vw, 110px);
+  height: auto;
 }
 .num-4 {
   grid-row: span 2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-    font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 700;
   line-height: 1rem;
   color: var(--amber);
@@ -364,7 +292,7 @@ svg {
 }
 
 .dropdown:hover > .submenu {
-  display: none !important; 
+  display: none !important;
 }
 
 .submenu li a {
@@ -380,7 +308,7 @@ svg {
 @media (min-width: 768px) {
   header {
     display: block;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     width: 100%;
   }
@@ -468,7 +396,7 @@ svg {
 }
 @media (max-width: 767px) {
   header {
-    justify-content: flex-start; 
+    justify-content: flex-start;
   }
 
   .header-container {

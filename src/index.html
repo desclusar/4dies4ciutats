@@ -2,34 +2,15 @@
 <html lang="ca">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Descobreix ciutats europees en només 96 hores">
+  <include src="src/includes/_head.html"></include>
   <title>4 dies, 4 ciutats</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
-  <link rel="stylesheet" href="/src/assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="shortcut icon" href="/src/assets/img/icons/favicon.png" type="image/png">
-
-  <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js" defer></script>
-  <script src="./scripts/cookieconsent-config.js" defer></script>
-
-  <script type="module" src="/src/scripts/header.js"></script>
-  <script type="module" src="/src/scripts/main.js"></script>
-
+  <meta name="description" content="Descobreix ciutats europees en només 96 hores">
 </head>
 
 <body class="home">
   <a class="skip-link" href="#main-content">Salta al contingut principal</a>
 
-  <include src="src/includes/_header.html" locals='{
-    "bgImg": "/src/assets/img/londres.jpg", 
-    "bgAlt": "Vista de Londres"
-}'></include>
+  <include src="src/includes/_header.html"></include>
 
   <main id="main-content">
     <div class="container">
@@ -233,8 +214,8 @@
                         ./assets/img/mes-novembre-paris.jpg?width=800 800w,
                         ./assets/img/mes-novembre-paris.jpg?width=1000 1000w
                       " sizes="(max-width: 600px) 100vw, 80vw" width="1000" height="1250"
-                  alt="Torre Eiffel vista en pla contrapicat des d’un carrer proper" class="img-fluid"
-                  decoding="async" />
+                  alt="Torre Eiffel vista en pla contrapicat des d’un carrer proper" class="img-fluid" decoding="async"
+                  loading="lazy" />
               </picture>
 
             </a>
