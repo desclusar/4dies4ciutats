@@ -7,7 +7,7 @@
 <header id="main-header" class="site-header">
 
   <div class="header-bg-container">
-
+    <!--
     <picture>
       <source type="image/avif" srcset="{{bgImg}}?as=avif&width=480 480w,
             {{bgImg}}?as=avif&width=800 800w,
@@ -24,6 +24,32 @@
             {{bgImg}}?width=1000 1000w,
             {{bgImg}}?width=1400 1400w" sizes="100vw" alt="{{bgAlt}}" class="header-bg-img" loading="eager"
         fetchpriority="high" width="1400" height="800%" />
+    </picture>
+  -->
+
+    <picture>
+      <source media="(max-width: 768px)" type="image/avif" srcset="{{bgImgMobile}}?as=avif&width=400 400w,
+              {{bgImgMobile}}?as=avif&width=600 600w,
+              {{bgImgMobile}}?as=avif&width=800 800w" sizes="100vw" />
+
+      <source media="(max-width: 768px)" type="image/webp" srcset="{{bgImgMobile}}?as=webp&width=400 400w,
+              {{bgImgMobile}}?as=webp&width=600 600w,
+              {{bgImgMobile}}?as=avif&width=800 800w" sizes="100vw" />
+
+      <source type="image/avif" srcset="{{bgImg}}?as=avif&width=800 800w,
+              {{bgImg}}?as=avif&width=1000 1000w,
+              {{bgImg}}?as=avif&width=1400 1400w,
+              {{bgImg}}?as=avif&width=1800 1800w" sizes="100vw" />
+
+      <source type="image/webp" srcset="{{bgImg}}?as=webp&width=800 800w,
+              {{bgImg}}?as=webp&width=1000 1000w,
+              {{bgImg}}?as=webp&width=1400 1400w,
+              {{bgImg}}?as=webp&width=1800 1800w" sizes="100vw" />
+
+      <img src="{{bgImg}}?width=1000" srcset="{{bgImg}}?width=800 800w,
+               {{bgImg}}?width=1000 1000w,
+               {{bgImg}}?width=1400 1400w" sizes="100vw" alt="{{bgAlt}}" class="header-bg-img" loading="eager"
+        fetchpriority="high" width="1400" height="400" />
     </picture>
 
   </div>
