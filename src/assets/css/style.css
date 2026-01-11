@@ -4,8 +4,7 @@
 @import "variables.css";
 @import "./components/_header.css";
 @import "./components/_footer.css";
-@import "cookieconsent.css";
-@import "npm:glightbox/dist/css/glightbox.css";
+
 /* --------------------------------------------------
    RESET
 -------------------------------------------------- */
