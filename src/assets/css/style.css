@@ -4,7 +4,8 @@
 @import "variables.css";
 @import "./components/_header.css";
 @import "./components/_footer.css";
-@import url("https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css");
+@import "cookieconsent.css";
+@import "npm:glightbox/dist/css/glightbox.css";
 /* --------------------------------------------------
    RESET
 -------------------------------------------------- */

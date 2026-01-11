@@ -1,0 +1,1 @@
+import "npm:flag-icons/css/flag-icons.min.css";
