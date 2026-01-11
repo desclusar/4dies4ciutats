@@ -14,7 +14,10 @@
 
 <body class="det-edimburg">
   <a class="skip-link" href="#main-content">Salta al contingut principal</a>
-  <include src="src/includes/_header.html"></include>
+  <include src="src/includes/_header.html" locals='{
+    "bgImg": "/src/assets/img/estiu-edimburg.jpg", 
+    "bgAlt": "Vista d’Edimburg al capvespre amb la torre del rellotge i el perfil històric de la ciutat il·luminats pel sol baix"
+}'></include>
 
   <main id="main-content">
 
@@ -85,7 +88,8 @@
         <article class="ruta-dia">
           <div class="article-ruta">
             <h3>Dia 3 - Arthur’s Seat i Holyrood</h3>
-            <p>Puja al volcà adormit d’Arthur’s Seat per gaudir d’una panoràmica impressionant de la ciutat. A la tarda,
+            <p>Puja al volcà adormit d’Arthur’s Seat per gaudir d’una panoràmica impressionant de la ciutat. A la
+              tarda,
               visita el Palau de Holyrood i el Parlament Escocès.</p>
           </div>
           <iframe

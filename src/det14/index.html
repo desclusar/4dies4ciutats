@@ -14,7 +14,10 @@
 
 <body class="det-munic">
   <a class="skip-link" href="#main-content">Salta al contingut principal</a>
-  <include src="src/includes/_header.html"></include>
+  <include src="src/includes/_header.html" locals='{
+    "bgImg": "/src/assets/img/tardor-munic.jpg", 
+    "bgAlt": "Vista de Munic al capvespre amb Marienplatz, l’església de Sant Pere i els edificis històrics del centre"
+}'></include>
 
   <main id="main-content">
 
@@ -110,7 +113,8 @@
     <section class="gastronomia">
       <div class="container">
         <h2>On dinar</h2>
-        <p>Prova el *Weißwurst*, el *Pretzel* i una cervesa bavaresa. Els biergärten són ideals per gaudir del menjar i
+        <p>Prova el *Weißwurst*, el *Pretzel* i una cervesa bavaresa. Els biergärten són ideals per gaudir del menjar
+          i
           l’ambient de tardor.</p>
       </div>
     </section>

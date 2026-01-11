@@ -14,13 +14,18 @@
 
 <body class="det-paris">
   <a class="skip-link" href="#main-content">Salta al contingut principal</a>
-  <include src="src/includes/_header.html"></include>
+  <include src="src/includes/_header.html" locals='{
+    "bgImg": "/src/assets/img/tardor-paris.jpg", 
+    "bgAlt": "Pont Alexandre III de París al capvespre amb fanals il·luminats, escultures daurades i el riu Sena"
+}'></include>
+
   <main id="main-content">
 
     <section class="intro">
       <div class="container">
         <h1>París a la tardor</h1>
-        <p>Quan arriba la tardor, París es cobreix de colors càlids i llum daurada. Els seus parcs, cafès i ponts sobre
+        <p>Quan arriba la tardor, París es cobreix de colors càlids i llum daurada. Els seus parcs, cafès i ponts
+          sobre
           el Sena conviden a caminar sense pressa. Aquesta és l’estació més serena i romàntica per descobrir la ciutat
           de la llum amb tranquil·litat.</p>
         <figure>
@@ -69,7 +74,8 @@
         <article class="ruta-dia">
           <div class="article-ruta">
             <h3>Dia 2 - El cor històric</h3>
-            <p>Descobreix Notre-Dame, la Sainte-Chapelle i el barri del Marais. Sopar en un bistrot amb vistes al Sena i
+            <p>Descobreix Notre-Dame, la Sainte-Chapelle i el barri del Marais. Sopar en un bistrot amb vistes al Sena
+              i
               música suau de fons.</p>
           </div>
           <iframe
@@ -109,7 +115,8 @@
     <section class="gastronomia">
       <div class="container">
         <h2>On dinar</h2>
-        <p>Gaudeix de la cuina francesa amb plats com la *quiche lorraine*, la *soupe à l’oignon* o un croissant acabat
+        <p>Gaudeix de la cuina francesa amb plats com la *quiche lorraine*, la *soupe à l’oignon* o un croissant
+          acabat
           de fer. Els cafès de barri són ideals per observar la vida parisenca.</p>
       </div>
     </section>

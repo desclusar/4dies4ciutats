@@ -9,9 +9,10 @@
 
 <body class="links">
   <a class="skip-link" href="#main-content">Salta al contingut principal</a>
-  <script type="module" src="../scripts/main.js"></script>
-
-  <include src="src/includes/_header.html"></include>
+  <include src="src/includes/_header.html" locals='{
+    "bgImg": "/src/assets/img/londres.jpg", 
+    "bgAlt": "Vista de Londres"
+    }'></include>
 
   <main id="main-content">
 
@@ -60,7 +61,8 @@
               <li><a href="https://officiallondontheatre.com/" target="_blank" rel="noopener">Teatres del West End</a>
               </li>
               <li><a href="https://www.britishmuseum.org/" target="_blank" rel="noopener">British Museum</a></li>
-              <li><a href="https://hydeparkwinterwonderland.com/" target="_blank" rel="noopener">Winter Wonderland (Hyde
+              <li><a href="https://hydeparkwinterwonderland.com/" target="_blank" rel="noopener">Winter Wonderland
+                  (Hyde
                   Park)</a></li>
             </ul>
           </article>

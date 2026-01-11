@@ -19,12 +19,8 @@ header::before {
   background: rgba(0, 0, 0, 0.6);
   z-index: 1;
   pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.6s ease-in-out;
-}
-
-header:has(.header-bg-img.is-loaded)::before {
   opacity: 1;
+  transition: opacity 0.6s ease-in-out;
 }
 
 header * {
@@ -47,8 +43,7 @@ header * {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  opacity: 0; /*Comença sense veure's i vaig preparant la transició*/
-  transition: opacity 0.6s ease-in-out;
+  opacity: 1;
 }
 
 .header-bg-img.is-loaded {

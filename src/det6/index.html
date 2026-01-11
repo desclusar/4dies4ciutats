@@ -9,12 +9,15 @@
   <link rel="preconnect" href="https://maps.googleapis.com">
   <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://i.ytimg.com">
-  <link rel="preconnect" href="https://www.youtube.com">
+  <link rel="preconnect" href="https://www.youtube.com"> ```
 </head>
 
 <body class="det-lisboa">
   <a class="skip-link" href="#main-content">Salta al contingut principal</a>
-  <include src="src/includes/_header.html"></include>
+  <include src="src/includes/_header.html" locals='{
+    "bgImg": "/src/assets/img/primavera-lisboa.jpg", 
+    "bgAlt": "Vista panoràmica de Lisboa al capvespre amb carrers il·luminats, teulades i el riu Tajo al fons"
+}'></include>
 
   <main id="main-content">
 
@@ -97,7 +100,8 @@
         <article class="ruta-dia">
           <div class="article-ruta">
             <h3>Dia 4 - Sintra i costa</h3>
-            <p>Excursió d’un dia a Sintra, Patrimoni de la Humanitat. Visita el Palau da Pena i el Castell dels Moros, o
+            <p>Excursió d’un dia a Sintra, Patrimoni de la Humanitat. Visita el Palau da Pena i el Castell dels Moros,
+              o
               apropa’t a l’oceà a Cabo da Roca.</p>
           </div>
           <iframe
