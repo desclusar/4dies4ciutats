@@ -5,11 +5,6 @@
   <include src="src/includes/_head.html"></include>
   <title>4 dies, 4 ciutats | Munic</title>
   <meta name="description" content="Munic: tradició i cervesa a la tardor">
-  <link rel="preconnect" href="https://www.google.com">
-  <link rel="preconnect" href="https://maps.googleapis.com">
-  <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://i.ytimg.com">
-  <link rel="preconnect" href="https://www.youtube.com">
 </head>
 
 <body class="det-munic">
@@ -28,10 +23,7 @@
         <p>La tardor és l’època més festiva a Munic, amb l’Oktoberfest i els parcs tenyits de colors càlids. Entre
           cervesa, tradició i cultura, la capital bavaresa ofereix una experiència alegre i autèntica.</p>
         <figure>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/fw9JrvXR7zk?si=q9GsaME9tW06f_6e"
-            title="YouTube video player" loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <lite-youtube videoid="fw9JrvXR7zk" playlabel="Reproduir vídeo How to Spend 4 Days in Munich"></lite-youtube>
           <figcaption>
             <cite>How to Spend 4 Days in Munich: A Perfect Travel Guide</cite> per <a
               href="https://www.youtube.com/@letsglobetrottogether" target="_blank">Let's Globe Trot Together</a>
@@ -64,10 +56,29 @@
             <p>Comença a Marienplatz amb l’Ajuntament Nou i el Glockenspiel. Passeja fins a Viktualienmarkt i acaba al
               Hofbräuhaus, una de les cerveseries més famoses del món.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d6552.303946322512!2d11.574225748572188!3d48.138711744657314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e2!4m5!1s0x47a84e248d37632d%3A0xdead51b35f0e0bb3!2sMarienplatz%2C%2080331%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.1373932!2d11.5754485!4m5!1s0x479e75812686b2b3%3A0x252a0171ecf2f16e!2sViktualienmarkt!3m2!1d48.1353899!2d11.5760761!4m5!1s0x479e758bcf52fcc5%3A0xa9c170edcdbd1a2f!2sCervecer%C3%ADa%20de%20la%20Casa%20Real%20M%C3%BAnich!3m2!1d48.137637299999994!2d11.579749399999999!4m5!1s0x479e758930fbdc47%3A0x9c34ed51dd835782!2sMaximilianstra%C3%9Fe!3m2!1d48.1383815!2d11.5838305!4m5!1s0x479e758c82a697b5%3A0x8909ed689b94fa60!2sTeatro%20Nacional!3m2!1d48.139633599999996!2d11.5795543!4m5!1s0x479e758d324945f9%3A0x636805dc930bcc14!2sPlaza%20del%20Ode%C3%B3n!3m2!1d48.1420548!2d11.5773984!4m5!1s0x47a84e248d37632d%3A0xdead51b35f0e0bb3!2sMarienplatz%2C%2080331%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.1373932!2d11.5754485!5e1!3m2!1ses!2ses!4v1762798590623!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/LXWnKp4ER7WrKq9W9" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/munic_dia1.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/munic_dia1.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/munic_dia1.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/munic_dia1.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/munic_dia1.jpg?width=800" srcset="
+      /src/assets/img/maps/munic_dia1.jpg?width=800 800w,
+      /src/assets/img/maps/munic_dia1.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 1 pels llocs més emblemàtics de Munic"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -77,10 +88,29 @@
               Pinakothek
               der Moderne.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d13100.671762342645!2d11.577413676934823!3d48.15413010501571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e2!4m5!1s0x479e759795f82b6b%3A0xc99bdf627cefefd1!2zSmFyZMOtbiBJbmdsw6lzIGRlIE3Dum5pY2g!3m2!1d48.164232299999995!2d11.6055522!4m5!1s0x479e759710813fb1%3A0x9993c251b452be58!2sMonopteros%20im%20Englischen%20Garten!3m2!1d48.1498892!2d11.5909312!4m5!1s0x479e75bb3bc2e9b1%3A0x57082b2acd7e29d8!2sKleinhesseloher%20See!3m2!1d48.159253199999995!2d11.5968205!4m5!1s0x479e7591d60e2ee9%3A0x951d0ee78d6a51ab!2sHaus%20der%20Kunst!3m2!1d48.1440002!2d11.5858826!4m5!1s0x479e75ee60eec25b%3A0xc79f72ffd916aa66!2sPinakothek%20der%20Moderne!3m2!1d48.1468768!2d11.5721256!4m5!1s0x479e75ee8cc069d7%3A0x8158244f94d1c0b7!2sPinacoteca%20Antigua%20de%20M%C3%BAnich!3m2!1d48.1483311!2d11.5699755!4m5!1s0x479e75eeb8131ca7%3A0x9062087fc6f1de15!2sNeue%20Pinakothek!3m2!1d48.1498869!2d11.5711139!4m5!1s0x479e7597c1b7c3c7%3A0xe3c8848c9a7a2f5c!2sBiergarten%20am%20Chinesischen%20Turm%2C%20Englischer%20Garten%203%2C%2080538%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.152076!2d11.5923144!5e1!3m2!1ses!2ses!4v1762798654678!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/1jYCk3dkdHMq8AXVA" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/munic_dia2.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/munic_dia2.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/munic_dia2.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/munic_dia2.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/munic_dia2.jpg?width=800" srcset="
+      /src/assets/img/maps/munic_dia2.jpg?width=800 800w,
+      /src/assets/img/maps/munic_dia2.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 2 pels llocs més emblemàtics de Munic"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -89,10 +119,29 @@
             <p>Visita el Palau de Nymphenburg i els seus jardins de tardor. A la nit, gaudeix d’un concert o òpera al
               Nationaltheater.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d6549.559049787815!2d11.493532098575917!3d48.16021499166737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e2!4m5!1s0x479e77cc7fa2682d%3A0x274c5616a51e6d66!2sPalacio%20de%20Nymphenburg%2C%2080638%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.1582675!2d11.5033143!4m5!1s0x479e77b5f9a32b81%3A0x2111b2fdea75bf71!2sJard%C3%ADn%20Bot%C3%A1nico%20M%C3%BAnich-Nymphenburg%2C%20Menzinger%20Str.%2065%2C%2080638%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.164395899999995!2d11.5016451!4m5!1s0x479e77cc5ff8328d%3A0x69e4c8420fbd99a6!2sAmalienburg%2C%20Schlo%C3%9F%20Nymphenburg%20203%2C%2080638%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.1561155!2d11.5003997!4m5!1s0x479e77c8854b5afb%3A0xb642d4941de3b326!2sPagodenburg%2C%20Schlosspark%20Nymphenburg%20M%C3%BCnchen%2C%2080638%2C%20Alemania!3m2!1d48.1600737!2d11.4928013!4m5!1s0x479e77cade4862d5%3A0xd44768719aa795d2!2sMuseum%20of%20Man%20and%20Nature%2C%20Schlo%C3%9F%20Nymphenburg%2C%2080638%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.1599024!2d11.5040558!4m5!1s0x479e77cc7fa2682d%3A0x274c5616a51e6d66!2sPalacio%20de%20Nymphenburg%2C%2080638%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.1582675!2d11.5033143!5e1!3m2!1ses!2ses!4v1762798721036!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/dQWvEH9fWCGPHMQ77" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/munic_dia3.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/munic_dia3.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/munic_dia3.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/munic_dia3.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/munic_dia3.jpg?width=800" srcset="
+      /src/assets/img/maps/munic_dia3.jpg?width=800 800w,
+      /src/assets/img/maps/munic_dia3.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 3 pels llocs més emblemàtics de Munic"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -102,10 +151,27 @@
               marxar.
             </p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d3273.762249522121!2d11.553410776816886!3d48.17614879847445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e2!4m5!1s0x479e7663383eb533%3A0xb139a4810a41dd4b!2sOlympiapark%20M%C3%BCnchen%2C%20Spiridon-Louis-Ring%2021%2C%2080809%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.1754268!2d11.5519879!4m5!1s0x479e7681263ae453%3A0xcb53d58106290075!2sOlympiaturm%2C%20Olympiapark%20M%C3%BCnchen%2C%20Spiridon-Louis-Ring%207%2C%2080809%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.174357799999996!2d11.5537484!4m5!1s0x479e767d8a0057d1%3A0xa5353cc93ef3e778!2sMundo%20BMW%2C%20Am%20Olympiapark%201%2C%2080809%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.1771981!2d11.5562963!4m5!1s0x479e767c312a0131%3A0x3328e2f42d9fc5a8!2sSea%20Life%20Munich%2C%20Willi-Daume-Platz%201%20muenchen%40sealife%2C%2080809%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.173749099999995!2d11.556290299999999!4m5!1s0x479e7663383eb533%3A0xb139a4810a41dd4b!2sOlympiapark%20M%C3%BCnchen%2C%20Spiridon-Louis-Ring%2021%2C%2080809%20M%C3%BCnchen%2C%20Alemania!3m2!1d48.1754268!2d11.5519879!5e1!3m2!1ses!2ses!4v1762798772788!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a href="https://maps.app.goo.gl/kAMPH9TKbuqLHQ169" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/munic_dia4.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/munic_dia4.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/munic_dia4.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/munic_dia4.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/munic_dia4.jpg?width=800" srcset="
+      /src/assets/img/maps/munic_dia4.jpg?width=800 800w,
+      /src/assets/img/maps/munic_dia4.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 4 pels llocs més emblemàtics de Munic"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
         </article>
 
       </div>

@@ -5,11 +5,6 @@
   <include src="src/includes/_head.html"></include>
   <title>4 dies, 4 ciutats | París</title>
   <meta name="description" content="París: romanticisme i calma a la tardor">
-  <link rel="preconnect" href="https://www.google.com">
-  <link rel="preconnect" href="https://maps.googleapis.com">
-  <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://i.ytimg.com">
-  <link rel="preconnect" href="https://www.youtube.com">
 </head>
 
 <body class="det-paris">
@@ -30,10 +25,8 @@
           el Sena conviden a caminar sense pressa. Aquesta és l’estació més serena i romàntica per descobrir la ciutat
           de la llum amb tranquil·litat.</p>
         <figure>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/R-nmONXkAbg?si=J1orKTQO_tuhioXs"
-            title="YouTube video player" loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <lite-youtube videoid="R-nmONXkAbg"
+            playlabel="Reproduir vídeo París descubre qué ver en 3-5 días"></lite-youtube>
           <figcaption>
             <cite>PARÍS descubre qué ver en 3-5 días</cite> per <a href="https://www.youtube.com/@europaacompanada"
               target="_blank">Europa acompañada</a>
@@ -66,10 +59,29 @@
             <p>Comença per la Torre Eiffel, passeja pel Camp de Mart i creua el Sena cap als Invalides. A la tarda,
               visita el Museu d’Orsay i acaba al riu amb un creuer nocturn.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d12919.316385840139!2d2.2959165274260327!3d48.86055620824214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e2!4m5!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!3m2!1d48.858370099999995!2d2.2944812999999997!4m5!1s0x47e670209c1c4807%3A0x9702c4c43d00821e!2sCampo%20de%20Marte%2C%2075007%20Paris%2C%20Francia!3m2!1d48.8558047!2d2.2983766!4m5!1s0x47e66fe3ad43f65b%3A0xe6cc2c00d7edf7ac!2sPuente%20de%20Jena!3m2!1d48.859868!2d2.2920043!4m5!1s0x47e66fddbf0f1481%3A0xaa4fd458e3c05e2b!2sPuente%20del%20Alma!3m2!1d48.8634914!2d2.3018525!4m5!1s0x47e66fdcaa0cb549%3A0x607d018620c897d7!2sAvenue%20Montaigne%2C%2075008%20Paris%2C%20Francia!3m2!1d48.867092!2d2.3062035!4m5!1s0x47e66fcd61ae0a01%3A0x18030de10e25ab2c!2sPlace%20de%20la%20Concorde%2C%2075008%20Paris%2C%20Francia!3m2!1d48.8656331!2d2.3212357!4m5!1s0x47e66fd057a1f0b9%3A0xeb0032bf06974d4f!2sPuente%20Alejandro%20III!3m2!1d48.863899499999995!2d2.3135589999999997!4m5!1s0x47e66fd7b98f3053%3A0x455a14459c80c16a!2sLos%20Inv%C3%A1lidos%2C%2075007%20Paris%2C%20Francia!3m2!1d48.856528999999995!2d2.3127059!4m5!1s0x47e670209c1c4807%3A0x9702c4c43d00821e!2sCampo%20de%20Marte%2C%2075007%20Paris%2C%20Francia!3m2!1d48.8558047!2d2.2983766!5e1!3m2!1ses!2ses!4v1762799169984!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/aqz7oZdEB4KmpU8c6" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/paris_dia1.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/paris_dia1.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/paris_dia1.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/paris_dia1.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/paris_dia1.jpg?width=800" srcset="
+      /src/assets/img/maps/paris_dia1.jpg?width=800 800w,
+      /src/assets/img/maps/paris_dia1.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 1 pels llocs més emblemàtics de París"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -79,10 +91,29 @@
               i
               música suau de fons.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d6460.234438515958!2d2.342180648696596!3d48.85609109440594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e2!4m5!1s0x47e671e19ff53a01%3A0x36401da7abfa068d!2sCatedral%20de%20Notre%20Dame!3m2!1d48.8529682!2d2.3499021!4m5!1s0x47e66e1fd8767d47%3A0x33f441f9dc242768!2sSainte%20Chapelle!3m2!1d48.855374999999995!2d2.3449609!4m5!1s0x47e66e1fd8767d47%3A0x90ca4b466cb6316a!2sLa%20Conciergerie!3m2!1d48.8560114!2d2.3454953!4m5!1s0x47e66e208ddb058b%3A0xd469600dcb63f51b!2sPuente%20Nuevo%2C%2075001%20Paris%2C%20Francia!3m2!1d48.8567198!2d2.3407594!4m5!1s0x47e66e2079dac5cb%3A0xced8bd98962c1b52!2sPlace%20Dauphine%2C%2075001%20Paris%2C%20Francia!3m2!1d48.8563336!2d2.3424088999999997!4m5!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sMuseo%20del%20Louvre!3m2!1d48.8606111!2d2.337644!4m5!1s0x47e66e271892bc5b%3A0x4a478d68db24dc95!2sPuente%20de%20las%20Artes!3m2!1d48.8583424!2d2.3375084!4m5!1s0x47e671fcbd4e8ee5%3A0x56c004e969467530!2s%C3%8Ele%20Saint-Louis%2C%2075004%20Par%C3%ADs%2C%20Francia!3m2!1d48.851557199999995!2d2.3574207!4m5!1s0x47e671e19ff53a01%3A0x36401da7abfa068d!2sCatedral%20de%20Notre%20Dame%2C%206%20Parvis%20Notre-Dame%20-%20Pl.%20Jean-Paul%20II%2C%2075004%20Paris%2C%20Francia!3m2!1d48.8529682!2d2.3499021!5e1!3m2!1ses!2ses!4v1762799241424!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/1FNnbUmWnzghVasw9" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/paris_dia2.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/paris_dia2.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/paris_dia2.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/paris_dia2.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/paris_dia2.jpg?width=800" srcset="
+      /src/assets/img/maps/paris_dia2.jpg?width=800 800w,
+      /src/assets/img/maps/paris_dia2.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 2 pels llocs més emblemàtics de París"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -91,10 +122,29 @@
             <p>Puja al barri bohemi de Montmartre, visita el Sacré-Cœur i passeja per la Plaça du Tertre. A la tarda,
               explora el Louvre o el Centre Pompidou.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d3228.204856117446!2d2.3351157768476862!3d48.88572179878223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e2!4m5!1s0x47e66e4334868de3%3A0xcfc3870abe2b8519!2zQmFzw61saWNhIGRlbCBTYWNyw6kgQ8WTdXI!3m2!1d48.886704599999995!2d2.3431043!4m5!1s0x47e66e4ffe8fd717%3A0xf4aa1f0840f0e862!2sPlace%20du%20Tertre!3m2!1d48.886572799999996!2d2.3408278!4m5!1s0x47e66e5b42ecc559%3A0x113761431fdaa76e!2sMuseo%20de%20Montmartre!3m2!1d48.887709!2d2.3406731!4m5!1s0x47e66e5ab88298f1%3A0x953592d68753f8ca!2sMoulin%20de%20la%20Galette!3m2!1d48.8873961!2d2.3371291999999997!4m5!1s0x47e66e4ff5fdee29%3A0xbd76805b243827b4!2sRue%20Lepic%2C%2075018%20Paris%2C%20Francia!3m2!1d48.885838199999995!2d2.3348139999999997!4m5!1s0x47e66e4eff6f0c89%3A0xf44e90af87482111!2sMoulin%20Rouge!3m2!1d48.8841232!2d2.3322518999999997!4m5!1s0x47e66e4f116dc33b%3A0x57c1b0e44aaeb2ec!2sBoulevard%20de%20Clichy%2C%20Paris%2C%20Francia!3m2!1d48.8833675!2d2.3335634!4m5!1s0x47e66e451214b3c7%3A0x66a0f74a9e6b6c28!2sRue%20des%20Abbesses%2C%2075018%20Paris%2C%20Francia!3m2!1d48.884898199999995!2d2.3374539999999997!4m5!1s0x47e66e4334868de3%3A0xcfc3870abe2b8519!2sBas%C3%ADlica%20del%20Sacr%C3%A9%20C%C5%93ur%2C%2035%20Rue%20du%20Chevalier%20de%20la%20Barre%2C%2075018%20Paris%2C%20Francia!3m2!1d48.886704599999995!2d2.3431043!5e1!3m2!1ses!2ses!4v1762799318896!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/NMBvdr2HCJXmHwar8" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/paris_dia3.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/paris_dia3.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/paris_dia3.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/paris_dia3.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/paris_dia3.jpg?width=800" srcset="
+      /src/assets/img/maps/paris_dia3.jpg?width=800 800w,
+      /src/assets/img/maps/paris_dia3.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 3 pels llocs més emblemàtics de París"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -104,10 +154,29 @@
               Sena
               i una última mirada a la ciutat il·luminada.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d12920.302822859527!2d2.3278970774233394!3d48.85673445931171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e2!4m5!1s0x47e671db36de687b%3A0x791dd61b089f98b!2sJardines%20de%20Luxemburgo%2C%2075006%20Paris%2C%20Francia!3m2!1d48.8466144!2d2.3363309!4m5!1s0x47e671e7d297c973%3A0xe5eb004f23a758!2sPante%C3%B3n%20de%20Par%C3%ADs%2C%20Pl.%20du%20Panth%C3%A9on%2C%2075005%20Paris%2C%20Francia!3m2!1d48.846221799999995!2d2.3464138!4m5!1s0x47e671dd467825d5%3A0x5bf7ae802916b750!2sRue%20Soufflot%2C%20Paris%2C%20Francia!3m2!1d48.8469286!2d2.342746!4m5!1s0x47e671e07ecbcd73%3A0xecef6c73ac2ed39d!2sPuente%20Saint-Michel%2C%20Pont%20Saint-Michel%2C%2075006%20Paris%2C%20Francia!3m2!1d48.854102499999996!2d2.3446491!4m5!1s0x47e671e037bbc73d%3A0x9c2a87a32dd21743!2zSXNsYSBkZSBsYSBDaXTDqSwgUGFyw61zLCBGcmFuY2lh!3m2!1d48.854882499999995!2d2.3474928!4m5!1s0x47e66e271892bc5b%3A0x4a478d68db24dc95!2sPuente%20de%20las%20Artes%2C%20Pont%20des%20Arts%2C%2075006%20Paris%2C%20Francia!3m2!1d48.8583424!2d2.3375084!4m5!1s0x47e66e31ee8c6305%3A0x6040cc8603a193e7!2sPl.%20Vend%C3%B4me%2C%2075001%20Paris%2C%20Francia!3m2!1d48.8674008!2d2.3295635!4m5!1s0x47e671db36de687b%3A0x791dd61b089f98b!2sJardines%20de%20Luxemburgo%2C%2075006%20Paris%2C%20Francia!3m2!1d48.8466144!2d2.3363309!5e1!3m2!1ses!2ses!4v1762799397556!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/SWZNGXLaXcBgGaHJ7" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/paris_dia4.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/paris_dia4.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/paris_dia4.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/paris_dia4.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/paris_dia4.jpg?width=800" srcset="
+      /src/assets/img/maps/paris_dia4.jpg?width=800 800w,
+      /src/assets/img/maps/paris_dia4.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 4 pels llocs més emblemàtics de París"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
       </div>

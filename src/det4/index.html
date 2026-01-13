@@ -5,11 +5,6 @@
   <include src="src/includes/_head.html"></include>
   <title>4 dies, 4 ciutats | Bruges</title>
   <meta name="description" content="Nadal a Europa: màgia, llums i tradició">
-  <link rel="preconnect" href="https://www.google.com">
-  <link rel="preconnect" href="https://maps.googleapis.com">
-  <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://i.ytimg.com">
-  <link rel="preconnect" href="https://www.youtube.com">
 </head>
 
 <body class="det-bruges">
@@ -33,10 +28,7 @@
           et
           farà sentir com dins d’una postal hivernal.</p>
         <figure>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/79JX7vmbFXc?si=TTpb9K83j_48xpRn"
-            title="YouTube video player" loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <lite-youtube videoid="79JX7vmbFXc" playlabel="Reproduir vídeo Bruges per Nadal"></lite-youtube>
           <figcaption>
             <cite>Brujas en Navidad</cite> per <a href="https://www.youtube.com/@viajandoporelmundomundial"
               target="_blank">viajandoporelmundomundial</a>
@@ -80,10 +72,28 @@
               algun pub històric com el <em>Café Vlissinghe</em>.
             </p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d8274.11832650593!2d3.2199717514533353!3d51.20411015912293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e2!4m5!1s0x47c350d00c097fdd%3A0xaa73aaedf870826e!2sMarkt%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.208619!2d3.223992!4m5!1s0x47c350daa9690e8b%3A0x69546ff963bd8158!2sCampanario%20de%20Brujas!3m2!1d51.2081466!2d3.2248010999999996!4m5!1s0x47c350cf8b409cd9%3A0xa009a38e6574024b!2sDe%20Burg%2C%20Burg%2015%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.208506199999995!2d3.2268383!4m5!1s0x47c35188c07d35ab%3A0xa6b9003ff69ffe0d!2sRosary%20Quay!3m2!1d51.2073745!2d3.2278678999999997!4m5!1s0x47c350db31529235%3A0x1d48281fb46c9deb!2sIglesia%20de%20Nuestra%20Se%C3%B1ora%20de%20Brujas!3m2!1d51.20469!2d3.2244474!4m5!1s0x47c350c2c1153d0d%3A0x7e87b472ada44cab!2sMinnewater%20Park!3m2!1d51.1995291!2d3.225273!4m5!1s0x47c350c3489ea823%3A0x4d3b7b234c9fccef!2sBeguinaje%20de%20Brujas!3m2!1d51.2013447!2d3.2227093!4m5!1s0x47c350c34d0545c9%3A0xf87a1607ef65033a!2sWalplein%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.202392499999995!2d3.2243768!4m5!1s0x47c350d00c097fdd%3A0xaa73aaedf870826e!2sMarkt%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.208619!2d3.223992!5e1!3m2!1ses!2ses!4v1762625628905!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/wbdedBafahdSvma58" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/bruges_dia1.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/bruges_dia1.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/bruges_dia1.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/bruges_dia1.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/bruges_dia1.jpg?width=800" srcset="
+      /src/assets/img/maps/bruges_dia1.jpg?width=800 800w,
+      /src/assets/img/maps/bruges_dia1.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 1 pels llocs més emblemàtics de Bruges"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
         <article class="ruta-dia">
           <div class="article-ruta">
@@ -99,10 +109,27 @@
               <strong>Begijnhof</strong>, un oasi de pau especialment bonic al capvespre.
             </p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d4136.853972026382!2d3.2232056775355535!3d51.206394632647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e2!4m5!1s0x47c350c5264650df%3A0x167edde29ef68e16!2sMuseo%20Groeninge!3m2!1d51.205220499999996!2d3.2266679!4m5!1s0x47c351c865db8c15%3A0x5989725e5b0f28d2!2sHof%20Arents!3m2!1d51.205254599999996!2d3.2255099!4m5!1s0x47c350c4cf0b0827%3A0x2f6b41202540e975!2sPuente%20Bonifacio!3m2!1d51.204911599999996!2d3.2253486!4m5!1s0x47c350db31529235%3A0x1d48281fb46c9deb!2sIglesia%20de%20Nuestra%20Se%C3%B1ora%20de%20Brujas!3m2!1d51.20469!2d3.2244474!4m5!1s0x47c350c4d495f47b%3A0x357b8a906dd14679!2sMuseo%20Gruuthuse!3m2!1d51.2052061!2d3.2249882999999997!4m5!1s0x47c350c52487bad9%3A0x2221369b2a6c775d!2sDijver%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.20617!2d3.22605!4m5!1s0x47c35188c07d35ab%3A0xa6b9003ff69ffe0d!2sRosary%20Quay!3m2!1d51.2073745!2d3.2278678999999997!4m5!1s0x47c350c55ae083ad%3A0xd89bd2666c92374c!2sWollestraat%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.207647599999994!2d3.2260210999999996!4m5!1s0x47c350d00c097fdd%3A0xaa73aaedf870826e!2sMarkt%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.208619!2d3.223992!5e1!3m2!1ses!2ses!4v1762625889954!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/Qn9sfJSjtXUr9cVa6" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/bruges_dia2.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/bruges_dia2.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/bruges_dia2.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/bruges_dia2.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/bruges_dia2.jpg?width=800" srcset="
+      /src/assets/img/maps/bruges_dia2.jpg?width=800 800w,
+      /src/assets/img/maps/bruges_dia2.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 2 pels llocs més emblemàtics de Bruges"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
 
         </article>
 
@@ -118,10 +145,28 @@
             </p>
 
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d8273.868988015414!2d3.2176131014535163!3d51.20549815892143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e2!4m5!1s0x47c351eed2150f23%3A0x1fce5ae5bf6c93a2!2s&#39;t%20Zand%20Square%2C%20&#39;t%20Zand%208000%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.2051404!2d3.2176017999999997!4m5!1s0x47c350daf042a1cf%3A0xcf6f7630b3f17c9a!2sThe%20Chocolate%20Line%2C%20Simon%20Stevinplein%2019%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.2065926!2d3.2224214!4m5!1s0x47c350dcb271a5ed%3A0xe9e5053c2d19ed01!2sHuisbrouwerij%20De%20Halve%20Maan%2C%20Walplein%2026%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.202447299999996!2d3.2241779999999998!4m5!1s0x47c350c34d0545c9%3A0xf87a1607ef65033a!2sWalplein%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.202392499999995!2d3.2243768!4m5!1s0x47c350c53ddee07b%3A0xbb26ab7aba2daffc!2sDijver%2C%208000%20Brujas%2C%20B%C3%A9lgica!3m2!1d51.2074066!2d3.2274399!4m5!1s0x47c351110cc1b8a9%3A0x8f9e71caefd26900!2sHuidenvettersplein%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.2076973!2d3.2277214!4m5!1s0x47c350daf2c47ad3%3A0xbfba01b4d2d8bafd!2sSteenstraat%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.2070168!2d3.2226044!4m5!1s0x47c351eed2150f23%3A0x1fce5ae5bf6c93a2!2s&#39;t%20Zand%20Square%2C%20&#39;t%20Zand%208000%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.2051404!2d3.2176017999999997!5e1!3m2!1ses!2ses!4v1762626022824!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/1rZC1xiHhkH2aZG9A" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/bruges_dia3.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/bruges_dia3.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/bruges_dia3.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/bruges_dia3.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/bruges_dia3.jpg?width=800" srcset="
+      /src/assets/img/maps/bruges_dia3.jpg?width=800 800w,
+      /src/assets/img/maps/bruges_dia3.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 3 pels llocs més emblemàtics de Bruges"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -136,10 +181,27 @@
               teva escapada amb un dinar relaxat i una cervesa belga al costat de l’aigua.
             </p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d8272.343722977634!2d3.2276926014546317!3d51.2139883076899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e2!4m5!1s0x47c3515947f6d099%3A0x3b4afcfb48d74718!2sJan%20van%20Eyckplein%2C%204%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.2115504!2d3.2259151999999998!4m5!1s0x47c350ce6bb8a645%3A0xaca8c098f3001fa6!2sSpiegelrei%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.2121523!2d3.227532!4m5!1s0x47c350cd058c6469%3A0x2f9d7c28fc80fc84!2sLangerei%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.2165331!2d3.2283532!4m5!1s0x47c350b5f6b292b7%3A0xdc09d92a746789a3!2sMolino%20de%20San%20Juan%2C%20Kruisvest%203%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.2154587!2d3.2381474999999997!4m5!1s0x47c350b671d9a2cb%3A0x1fd4d75c22068584!2sKruispoort%20gate%2C%20Langestraat%20191%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.212584!2d3.2400914999999997!4m5!1s0x47c350c936239f6d%3A0x76238241b331722d!2sIglesia%20de%20Santa%20Ana%2C%20Sint-Annaplein%208%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.2119729!2d3.2320328999999997!4m5!1s0x47c350cbed6dd621%3A0xe7df5b6f6cd67f06!2sCarmersstraat%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.214161999999995!2d3.2334147!4m5!1s0x47c3515947f6d099%3A0x3b4afcfb48d74718!2sJan%20van%20Eyckplein%2C%204%2C%208000%20Brugge%2C%20B%C3%A9lgica!3m2!1d51.2115504!2d3.2259151999999998!5e1!3m2!1ses!2ses!4v1762626122766!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/GKri9UQKhTtT8KoK8" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/bruges_dia4.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/bruges_dia4.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/bruges_dia4.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/bruges_dia4.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/bruges_dia4.jpg?width=800" srcset="
+      /src/assets/img/maps/bruges_dia4.jpg?width=800 800w,
+      /src/assets/img/maps/bruges_dia4.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 4 pels llocs més emblemàtics de Bruges"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
 
         </article>
       </div>

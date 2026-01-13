@@ -1,5 +1,7 @@
 import GLightbox from "glightbox";
 import Swal from 'sweetalert2'
+import 'lite-youtube-embed';
+import 'lite-youtube-embed/src/lite-yt-embed.css';
 
 const lightbox = GLightbox({
   selector: '.glightbox',

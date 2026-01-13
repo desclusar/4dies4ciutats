@@ -5,11 +5,6 @@
   <include src="src/includes/_head.html"></include>
   <title>4 dies, 4 ciutats | Praga</title>
   <meta name="description" content="Nadal a Europa: màgia, llums i tradició">
-  <link rel="preconnect" href="https://www.google.com">
-  <link rel="preconnect" href="https://maps.googleapis.com">
-  <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://i.ytimg.com">
-  <link rel="preconnect" href="https://www.youtube.com">
 </head>
 
 <body class="det-praga">
@@ -35,10 +30,7 @@
           sembla aturar-se. En només quatre dies podràs viure una experiència intensa però assequible, perfecta per
           sentir la màgia del Nadal sense córrer, gaudint de cada passeig.</p>
         <figure>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/fXdsgWUxHaU?si=JnkC1E9vxlR6ZpVH"
-            title="YouTube video player" loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <lite-youtube videoid="fXdsgWUxHaU" playlabel="Reproduir vídeo  Mercats de Praga per Nadal"></lite-youtube>
           <figcaption>
             <cite>Prague Christmas Markets</cite> per <a href="https://www.youtube.com/@ProwalkTours"
               target="_blank">Prowalk Tours
@@ -81,10 +73,27 @@
               Acaba el dia sopant en una taverna tradicional amb llum baixa i ambient acollidor.
             </p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d8473.628189647448!2d14.415197751308243!3d50.084618970325465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e2!4m5!1s0x470b94eb050ff205%3A0x9349b85fec4613a6!2sTorre%20de%20la%20P%C3%B3lvora!3m2!1d50.087272999999996!2d14.427788699999999!4m5!1s0x470b94ebe0a63dc3%3A0x622362a94719229d!2sCeletna%2010%20%2C%20Prague!3m2!1d50.0871528!2d14.4232594!4m5!1s0x470b94e93451fa21%3A0x97ef2407c21e72c4!2sPlaza%20de%20la%20Ciudad%20Vieja!3m2!1d50.0875692!2d14.421187499999998!4m5!1s0x470b94e939c02f49%3A0xf17b44b25aa20696!2sReloj%20Astron%C3%B3mico%20de%20Praga!3m2!1d50.0870215!2d14.4207065!4m5!1s0x470b936721e269bb%3A0x8afc5f9c6346421c!2sIglesia%20de%20Nuestra%20Se%C3%B1ora%20ante%20T%C3%BDn!3m2!1d50.0877486!2d14.4225397!4m5!1s0x470b94ee9047d2a7%3A0x611c95a9156c477c!2zSGF2ZWxza8OpIHRyxb5pxaF0xJs!3m2!1d50.0847749!2d14.4209608!4m5!1s0x470b94ef35324235%3A0xb234ae92107e0d9f!2zS2xlbWVudGludW0sIE1hcmnDoW5za8OpIG7DoW0uIDUsIDExMCAwMCBTdGFyw6kgTcSbc3RvLCBDaGVxdWlh!3m2!1d50.0865979!2d14.4160186!4m5!1s0x470b94f003cf77db%3A0x93eb4fbe7519bdf2!2zQ2FmZSBTbGF2aWEsIE7DoXJvZG7DrSAxLCAxMTAgMDAgU3RhcsOpIE3Em3N0bywgQ2hlcXVpYQ!3m2!1d50.0815245!2d14.4136388!5e1!3m2!1ses!2ses!4v1762622926276!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/rsTTt55mn8uCKEtd7" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/praga_dia1.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/praga_dia1.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/praga_dia1.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/praga_dia1.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/praga_dia1.jpg?width=800" srcset="
+      /src/assets/img/maps/praga_dia1.jpg?width=800 800w,
+      /src/assets/img/maps/praga_dia1.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 1 pels llocs més emblemàtics de Praga"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
         </article>
 
         <article class="ruta-dia">
@@ -101,10 +110,28 @@
               l’ambient històric i romàntic de Praga.
             </p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d8473.592683088571!2d14.401747901308264!3d50.08481982029707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e2!4m5!1s0x470b94ef35324235%3A0xb234ae92107e0d9f!2sKlementinum!3m2!1d50.0865979!2d14.4160186!4m5!1s0x470b94e5e58eb59f%3A0x75209738d1d3b126!2sPuente%20Carlos!3m2!1d50.086477099999996!2d14.4114366!4m5!1s0x470b94e3ef345ded%3A0xec9ecb6df67a2808!2sTorre%20del%20Puente%20en%20Mal%C3%A1%20Strana%2C%2057%2C%20Mal%C3%A1%20Strana%2C%20118%2000%20Praha%2C%20Chequia!3m2!1d50.0873231!2d14.406859899999999!4m5!1s0x470b94e182d6c123%3A0x6ab2a62c0bf51fc!2sIglesia%20de%20San%20Nicol%C3%A1s%20(Mal%C3%A1%20Strana)!3m2!1d50.087960599999995!2d14.402785!4m5!1s0x470b95b742806955%3A0xdeddf6db70b8cc60!2sCalle%20Nerudova%20en%20barrio%20Mala%20Strana!3m2!1d50.0885483!2d14.3977769!4m5!1s0x470b94e388b5f8dd%3A0x47fac776113df4ff!2sMuro%20de%20John%20Lennon!3m2!1d50.0862506!2d14.406791799999999!4m5!1s0x470b94ef35324235%3A0xb234ae92107e0d9f!2sKlementinum!3m2!1d50.0865979!2d14.4160186!4m5!1s0x470b94e48955bb5f%3A0x68447e1f73e9a203!2sIsla%20Kampa!3m2!1d50.0848479!2d14.4083515!4m5!1s0x470b94fb13dec22f%3A0xa79ca53a2235f18f!2zQ2Fmw6kgU2F2b3ksIFbDrXTEm3puw6EgMTI0LzUsIDE1MCAwMCBNYWzDoSBTdHJhbmEsIENoZXF1aWE!3m2!1d50.080962899999996!2d14.407321399999999!5e1!3m2!1ses!2ses!4v1762623087336!5m2!1ses!2ses"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/zubsjv4mhJR8cYLQA" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/praga_dia2.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/praga_dia2.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/praga_dia2.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/praga_dia2.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/praga_dia2.jpg?width=800" srcset="
+      /src/assets/img/maps/praga_dia2.jpg?width=800 800w,
+      /src/assets/img/maps/praga_dia2.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 2 pels llocs més emblemàtics de Praga"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
 
         </article>
 
@@ -122,10 +149,29 @@
             </p>
 
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d8472.581095763444!2d14.392898951309176!3d50.09054181947925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e2!4m5!1s0x470b951f410e18ef%3A0x418a460a184ad282!2zUHJhxb5za8O9IGhyYWQ!3m2!1d50.093323!2d14.398007!4m5!1s0x470b951e6c24b7c3%3A0x2acf3c88af12259f!2sCastillo%20de%20Praga!3m2!1d50.0910966!2d14.4016165!4m5!1s0x470b951e38024f5b%3A0x69ad3850f2d989a2!2sCatedral%20de%20Praga!3m2!1d50.090891799999994!2d14.4005114!4m5!1s0x470b951c2ba5ab2b%3A0x4038e59ce51914b1!2sAntiguo%20Palacio%20Real!3m2!1d50.0906905!2d14.401145999999999!4m5!1s0x470b951e2c5a368f%3A0xdb7327d63641d9c4!2sBas%C3%ADlica%20de%20San%20Jorge%20de%20Praga!3m2!1d50.091231099999995!2d14.402393799999999!4m5!1s0x470b94e024e3e799%3A0x6f4243dc201428f0!2sGolden%20Lane!3m2!1d50.0918218!2d14.403829799999999!4m5!1s0x470b951e9c0fafc1%3A0x7f99987c16ced6f9!2sPlaza%20de%20Hradcany!3m2!1d50.089583499999996!2d14.396034499999999!4m5!1s0x470b95a513c93ea1%3A0x2121c7a58dfb9251!2sThe%20House%20at%20the%20Two%20Suns!3m2!1d50.0884965!2d14.3972672!4m5!1s0x470b94e22184c0a7%3A0x52de0710cdf2822d!2zTWFsb3N0cmFuc2vDqSBuw6FtxJtzdMOtLCAxMTggMDAgTWFsw6EgU3RyYW5hLCBDaGVxdWlh!3m2!1d50.087736299999996!2d14.4032535!5e1!3m2!1ses!2ses!4v1762623871343!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/DwBzHdXR8whdZs9B8" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/praga_dia3.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/praga_dia3.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/praga_dia3.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/praga_dia3.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/praga_dia3.jpg?width=800" srcset="
+      /src/assets/img/maps/praga_dia3.jpg?width=800 800w,
+      /src/assets/img/maps/praga_dia3.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 3 pels llocs més emblemàtics de Praga"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -141,10 +187,28 @@
               de <strong>Na Příkopě</strong> i <strong>Wenceslas Square</strong> per comprar records nadalencs i
               acomiadar-te de Praga amb calma.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d16946.910029750463!2d14.404658787872137!3d50.085598562587876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e2!4m5!1s0x470b94e9ca5fda67%3A0xb74e9199050993dd!2sSinagoga%20Espa%C3%B1ola!3m2!1d50.0901396!2d14.4208512!4m5!1s0x470b94e868e5c8c9%3A0x94be0e2fdb884bfa!2sSinagoga%20Vieja-Nueva!3m2!1d50.090071599999995!2d14.4186049!4m5!1s0x470b94ec00000001%3A0x87ac82039f145fd5!2sAntiguo%20Cementerio%20Jud%C3%ADo!3m2!1d50.0894826!2d14.4174435!4m5!1s0x470b94e85be80067%3A0x87d2eeb66f86dd2b!2zUGHFmcOtxb5za8Oh!3m2!1d50.08943!2d14.41911!4m5!1s0x470b94e93451fa21%3A0x97ef2407c21e72c4!2sPlaza%20de%20la%20Ciudad%20Vieja!3m2!1d50.0875692!2d14.421187499999998!4m5!1s0x470b94eb8dab1e45%3A0x446a2f26a172f0e4!2sMYSLBEK%20Shopping%20Gallery!3m2!1d50.085771699999995!2d14.425372399999999!4m5!1s0x470b94ed30d58c83%3A0x31bac9b91ab53afb!2sPlaza%20de%20Wenceslao%2C%20110%2000%20Praha%201%2C%20Chequia!3m2!1d50.0810226!2d14.4279917!4m5!1s0x470b95a513c93ea1%3A0x2121c7a58dfb9251!2sThe%20House%20at%20the%20Two%20Suns!3m2!1d50.0884965!2d14.3972672!4m5!1s0x470b949558c1bf45%3A0x9fea082416e2f3e9!2zQ2Fmw6kgSW1wZXJpYWwsIE5hIFBvxZnDrcSNw60gMTA3Mi8xNSwgMTEwIDAwIFBldHJza8OhIMSNdHZyxaUsIENoZXF1aWE!3m2!1d50.089798599999995!2d14.4326642!5e1!3m2!1ses!2ses!4v1762624101456!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/DwBzHdXR8whdZs9B8" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/praga_dia4.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/praga_dia4.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/praga_dia4.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/praga_dia4.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/praga_dia4.jpg?width=800" srcset="
+      /src/assets/img/maps/praga_dia4.jpg?width=800 800w,
+      /src/assets/img/maps/praga_dia4.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 4 pels llocs més emblemàtics de Praga"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
 
         </article>
       </div>

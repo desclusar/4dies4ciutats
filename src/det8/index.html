@@ -5,11 +5,6 @@
   <include src="src/includes/_head.html"></include>
   <title>4 dies, 4 ciutats | Sevilla</title>
   <meta name="description" content="Sevilla: art, llum i Setmana Santa a la primavera">
-  <link rel="preconnect" href="https://www.google.com">
-  <link rel="preconnect" href="https://maps.googleapis.com">
-  <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://i.ytimg.com">
-  <link rel="preconnect" href="https://www.youtube.com">
 </head>
 
 <body class="det-sevilla">
@@ -30,10 +25,7 @@
           taronger, processons de Setmana Santa i alegria popular. En quatre dies pots conèixer el seu patrimoni, la
           seva gastronomia i la seva gent, vivint una experiència plena de color i emoció.</p>
         <figure>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/nm1Q_wY4gvc?si=1jphBN4n5oyKyjOo"
-            title="YouTube video player" loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <lite-youtube videoid="nm1Q_wY4gvc" playlabel="Reproduir vídeo 4 dies a Sevilla"></lite-youtube>
           <figcaption>
             <cite>4 DAYS IN SEVILLE | SPAIN TRAVEL VLOG</cite> per <a
               href="https://www.youtube.com/@thestylishwordsmith" target="_blank">Debbie Poh</a>
@@ -68,10 +60,29 @@
               ciutat. Continua pel Real Alcázar i el seu jardí andalusí, i acaba el dia passejant pel barri de Santa
               Cruz, amb els seus carrerons i terrasses.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d2693.4490606452177!2d-5.993397560864489!3d37.38461727424585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e2!4m5!1s0xd126c1755b54781%3A0xe49da05de71e6de5!2sCatedral%20de%20Sevilla!3m2!1d37.3858247!2d-5.9931068!4m5!1s0xd126c1a1eb7d42b%3A0x9d4fd647e46b7247!2sLa%20Giralda!3m2!1d37.3861784!2d-5.9926137!4m5!1s0xd126c198c41a24b%3A0xbaa976bfaec1fe87!2sReal%20Alc%C3%A1zar%20de%20Sevilla!3m2!1d37.3830519!2d-5.9902257!4m5!1s0xd126c18e3c33cc3%3A0x13815c8066798890!2sJardines%20del%20Alc%C3%A1zar!3m2!1d37.3831108!2d-5.9902438!4m5!1s0xd126c1a279297ed%3A0x97febf6f3c562ccf!2sSanta%20Cruz%2C%20Casco%20Antiguo%2C%20Sevilla!3m2!1d37.384228799999995!2d-5.9903422!4m5!1s0xd126c1755b538a1%3A0x4330efece5653ae6!2sArchivo%20General%20de%20Indias%20(Am%C3%A9rica)!3m2!1d37.384628!2d-5.993258099999999!4m5!1s0xd126c17566c287d%3A0xaaa3e2da037bcd7c!2sAv.%20de%20la%20Constituci%C3%B3n%2C%20Casco%20Antiguo%2C%20Sevilla!3m2!1d37.3853638!2d-5.9939944999999994!4m5!1s0xd126c1755b54781%3A0xe49da05de71e6de5!2sCatedral%20de%20Sevilla%2C%20Av.%20de%20la%20Constituci%C3%B3n%2C%20s%2Fn%2C%20Casco%20Antiguo%2C%2041004%20Sevilla!3m2!1d37.3858247!2d-5.9931068!5e1!3m2!1ses!2ses!4v1762802773733!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/HiWqUGnbLptNqGkw6" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/sevilla_dia1.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/sevilla_dia1.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/sevilla_dia1.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/sevilla_dia1.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/sevilla_dia1.jpg?width=800" srcset="
+      /src/assets/img/maps/sevilla_dia1.jpg?width=800 800w,
+      /src/assets/img/maps/sevilla_dia1.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 1 pels llocs més emblemàtics de Sevilla"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -81,10 +92,29 @@
               pont cap al barri de Triana, conegut pel seu ambient, la ceràmica i el flamenc. Torna pel pont de San
               Telmo mentre cau el capvespre.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d5386.957846697909!2d-6.002055172803574!3d37.383785934584104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e2!4m5!1s0xd126c16af11db65%3A0x7504999e77d24fe5!2sTorre%20del%20Oro!3m2!1d37.3824569!2d-5.9962652!4m5!1s0xd126c1698582e6f%3A0x4c023ac3e1f1734b!2sPaseo%20Alcalde%20Marqu%C3%A9s%20del%20Contadero!3m2!1d37.3843211!2d-5.9986451999999995!4m5!1s0xd126c13fa46594f%3A0x435f3b05b9640285!2sPlaza%20de%20Toros%20de%20la%20Real%20Maestranza%20de%20Caballer%C3%ADa%20de%20Sevilla!3m2!1d37.3855924!2d-5.9988272!4m5!1s0xd126c136e2b90a5%3A0x4c0bcc574dff2913!2sPuente%20de%20Isabel%20II%20(Puente%20de%20Triana)!3m2!1d37.386417099999996!2d-6.0022761!4m5!1s0xd126c135640dca9%3A0xf1535ee87e3290ba!2sMercado%20de%20Triana!3m2!1d37.3857102!2d-6.0036109!4m5!1s0xd126c143381544d%3A0x3bddf0131d20ac60!2sC.%20Betis%2C%20Sevilla!3m2!1d37.383269999999996!2d-5.9998084!4m5!1s0xd126c17c5f75fb9%3A0x229f9924b33816d!2sPuente%20de%20San%20Telmo%2C%2041011%20Sevilla!3m2!1d37.3807997!2d-5.996327099999999!4m5!1s0xd126c16a51c47d5%3A0x3c5de7f9b5ca7a7c!2sPaseo%20de%20Crist%C3%B3bal%20Col%C3%B3n!3m2!1d37.3847441!2d-5.9983597!4m5!1s0xd126c16af11db65%3A0x7504999e77d24fe5!2sTorre%20del%20Oro%2C%20P.%C2%BA%20de%20Crist%C3%B3bal%20Col%C3%B3n%2C%20s%2Fn%2C%20Casco%20Antiguo%2C%2041001%20Sevilla!3m2!1d37.3824569!2d-5.9962652!5e1!3m2!1ses!2ses!4v1762802866331!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/qmfLdob3JL3SuNEN6" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/sevilla_dia2.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/sevilla_dia2.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/sevilla_dia2.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/sevilla_dia2.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/sevilla_dia2.jpg?width=800" srcset="
+      /src/assets/img/maps/sevilla_dia2.jpg?width=800 800w,
+      /src/assets/img/maps/sevilla_dia2.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 2 pels llocs més emblemàtics de Sevilla"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -93,10 +123,29 @@
             <p>Dedica el matí al Parc de María Luisa i la impressionant Plaza de España. A la tarda, descobreix el
               Metropol Parasol (Las Setas) i gaudeix de les vistes des de la seva passarel·la elevada.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d21548.31331478378!2d-6.0004741170024545!3d37.38210885380378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e2!4m5!1s0xd126c241d1a35ef%3A0x68b6f2f07d1ee842!2sParque%20de%20Mar%C3%ADa%20Luisa%2C%2041013%20Sevilla!3m2!1d37.3741832!2d-5.9872231!4m5!1s0xd126c2115c814eb%3A0x5b13dff2128dab06!2sPlaza%20de%20Espa%C3%B1a%2C%2041013%20Sevilla!3m2!1d37.377021!2d-5.9870583!4m5!1s0xd126c2615bba3d1%3A0x940d8228ce36adc!2sMuseo%20Arqueol%C3%B3gico%20de%20Sevilla!3m2!1d37.3709144!2d-5.986999!4m5!1s0xd126c264488ce55%3A0xce6d08964c3f88dd!2sMuseo%20de%20Artes%20y%20Costumbres%20Populares%20de%20Sevilla!3m2!1d37.372032!2d-5.9877955!4m5!1s0xd126c245e7af8d1%3A0x3ad5a9021b5d72c6!2sPabell%C3%B3n%20de%20Guatemala!3m2!1d37.373878!2d-5.9908573999999994!4m5!1s0xd126c237ad9417d%3A0xace3ca3f4918dc6d!2sP.%C2%BA%20de%20las%20Delicias%2C%20Sevilla!3m2!1d37.3800299!2d-5.994335599999999!4m5!1s0xd126c05109a541f%3A0xbda4ae6de1fed2c4!2sSetas%20de%20Sevilla!3m2!1d37.393270099999995!2d-5.9917478!4m5!1s0xd126c241d1a35ef%3A0x68b6f2f07d1ee842!2sParque%20de%20Mar%C3%ADa%20Luisa%2C%2041013%20Sevilla!3m2!1d37.3741832!2d-5.9872231!5e1!3m2!1ses!2ses!4v1762802964587!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/a4Exu7LoFHAGmcNf7" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/sevilla_dia3.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/sevilla_dia3.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/sevilla_dia3.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/sevilla_dia3.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/sevilla_dia3.jpg?width=800" srcset="
+      /src/assets/img/maps/sevilla_dia3.jpg?width=800 800w,
+      /src/assets/img/maps/sevilla_dia3.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 3 pels llocs més emblemàtics de Sevilla"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -107,10 +156,29 @@
               alguna processó pels carrers i viu la devoció i el silenci d’aquestes dates úniques. Tanca el viatge amb
               un sopar al vespre al barri d’Arenal o Triana.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d10773.139198076939!2d-6.001024599904963!3d37.38918981272804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e2!4m5!1s0xd126c0ddb18f2a7%3A0xb3ec5c53d730bc34!2sMuseo%20de%20Bellas%20Artes%20de%20Sevilla!3m2!1d37.3925104!2d-6.0000265!4m5!1s0xd126c0ddb0d6975%3A0xb94df34aff08521d!2sPlaza%20del%20Museo!3m2!1d37.3926659!2d-5.999298899999999!4m5!1s0xd126c0e7a471f0b%3A0xbf46b8fc7ff0639b!2sC.%20Alfonso%20XII%2C%20Casco%20Antiguo%2C%20Sevilla!3m2!1d37.392986!2d-5.9985786999999995!4m5!1s0xd126c0fae52b28b%3A0x4d1f30bed4271cb1!2sPlaza%20del%20Duque%20de%20la%20Victoria!3m2!1d37.393122999999996!2d-5.9958998!4m5!1s0xd126c051aa0bc53%3A0x2c6e59d995413b35!2sMercado%20de%20la%20Encarnaci%C3%B3n!3m2!1d37.3929079!2d-5.9917229999999995!4m5!1s0xd126c1abcd0c66b%3A0xb589cb84cd12cb9!2sIglesia%20Colegial%20del%20Divino%20Salvador!3m2!1d37.389996599999996!2d-5.992837499999999!4m5!1s0xd126c101cddb079%3A0xe114975ce20b4190!2sC.%20Sierpes%2C%20Casco%20Antiguo%2C%2041004%20Sevilla!3m2!1d37.3909294!2d-5.9945118!4m5!1s0xd126c1755b54781%3A0xe49da05de71e6de5!2sCatedral%20de%20Sevilla!3m2!1d37.3858247!2d-5.9931068!4m5!1s0xd126c0ddb18f2a7%3A0xb3ec5c53d730bc34!2sMuseo%20de%20Bellas%20Artes%20de%20Sevilla%2C%20Pl.%20del%20Museo%2C%209%2C%20Casco%20Antiguo%2C%2041001%20Sevilla!3m2!1d37.3925104!2d-6.0000265!5e1!3m2!1ses!2ses!4v1762803092445!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/3FivLstAzpdc8nqa7" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/sevilla_dia4.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/sevilla_dia4.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/sevilla_dia4.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/sevilla_dia4.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/sevilla_dia4.jpg?width=800" srcset="
+      /src/assets/img/maps/sevilla_dia4.jpg?width=800 800w,
+      /src/assets/img/maps/sevilla_dia4.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 4 pels llocs més emblemàtics de Sevilla"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
       </div>

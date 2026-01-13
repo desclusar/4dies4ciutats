@@ -5,11 +5,6 @@
   <include src="src/includes/_head.html"></include>
   <title>4 dies, 4 ciutats | Krakòvia</title>
   <meta name="description" content="Krakòvia: història i silenci a la tardor">
-  <link rel="preconnect" href="https://www.google.com">
-  <link rel="preconnect" href="https://maps.googleapis.com">
-  <link rel="preconnect" href="https://maps.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://i.ytimg.com">
-  <link rel="preconnect" href="https://www.youtube.com">
 </head>
 
 <body class="det-krakovia">
@@ -29,10 +24,7 @@
           fulles i els edificis històrics creen una atmosfera melancòlica i acollidora. Una ciutat perfecta per
           recarregar energia i gaudir del seu patrimoni cultural amb tranquil·litat.</p>
         <figure>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/lbPEPKjnwK4?si=aJ6uVNxtSByXSyxn"
-            title="YouTube video player" loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <lite-youtube videoid="lbPEPKjnwK4" playlabel="Reproduir vídeo Què fer a Krakòvia"></lite-youtube>
           <figcaption>
             <cite>What To Do In Krakow | 4 day itinerary</cite> per <a href="https://www.youtube.com/@JayCurtis"
               target="_blank">Jay Curtis Explores</a>
@@ -65,10 +57,29 @@
             <p>Comença a la Plaça del Mercat Major, visita la Basílica de Santa Maria i el mercat de Sukiennice. A la
               tarda, passeja per la zona del barri antic.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d35686.292803526034!2d2.3301168363860025!3d48.854424125457086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e2!4m5!1s0x47165b120455da67%3A0xc3c7f5071b750d33!2zUnluZWsgR8WCw7N3bnksIDMxLTQyMiBLcmFrw7N3LCBQb2xvbmlh!3m2!1d50.061897099999996!2d19.936755899999998!4m5!1s0x47165b11f53a5077%3A0xdd371e3071dcbf32!2sBas%C3%ADlica%20de%20Santa%20Mar%C3%ADa!3m2!1d50.061641099999996!2d19.9393903!4m5!1s0x47165b0e077b0fdd%3A0xd01f6c2526b37173!2sLonja%20de%20los%20Pa%C3%B1os!3m2!1d50.061599099999995!2d19.9373312!4m5!1s0x47165b0de165feb1%3A0xabe89a7b8eb98ee!2sTorre%20del%20Ayuntamiento%20de%20Cracovia!3m2!1d50.0615295!2d19.9364793!4m5!1s0x47165b0c32a892c7%3A0x74221849e13eb8f3!2sCollegium%20Maius!3m2!1d50.061563899999996!2d19.9339309!4m5!1s0x47165b121225416d%3A0x39928677322a305f!2sPlanty%2C%2031-041%20Krak%C3%B3w%2C%20Polonia!3m2!1d50.0599245!2d19.941430699999998!4m5!1s0x47165b103b2df85b%3A0xffc4fd6282924bd7!2sPuerta%20de%20San%20Flori%C3%A1n!3m2!1d50.0648602!2d19.941395099999998!4m5!1s0x47165b1031fb478d%3A0xa5b676bef7ecd283!2sBarbacana%20de%20Cracovia!3m2!1d50.0654718!2d19.9416613!4m5!1s0x47165b120455da67%3A0xc3c7f5071b750d33!2zUnluZWsgR8WCw7N3bnksIDMxLTQyMiBLcmFrw7N3LCBQb2xvbmlh!3m2!1d50.061897099999996!2d19.936755899999998!5e1!3m2!1ses!2ses!4v1762801472229!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/QiGnEyaCmceb1GhJ7" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/krakovia_dia1.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/krakovia_dia1.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/krakovia_dia1.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/krakovia_dia1.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/krakovia_dia1.jpg?width=800" srcset="
+      /src/assets/img/maps/krakovia_dia1.jpg?width=800 800w,
+      /src/assets/img/maps/krakovia_dia1.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 1 pels llocs més emblemàtics de Krakòvia"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -78,10 +89,28 @@
               o
               visita el barri jueu de Kazimierz.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d200766.63645738552!2d2.331919280663685!3d48.869641662696374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e2!4m5!1s0x47165b6d053619f5%3A0xacb9dfc4d67fa598!2sCastillo%20de%20Wawel%2C%20Wawel%205%2C%2031-001%20Krak%C3%B3w%2C%20Polonia!3m2!1d50.0541115!2d19.935423!4m5!1s0x47165b6d74aabf63%3A0x78fcde3f69ad7627!2sCatedral%20de%20Wawel!3m2!1d50.0546371!2d19.935468399999998!4m5!1s0x47165b423b8e3455%3A0xda94358c26c15d7!2sDragon%20Den!3m2!1d50.0536296!2d19.9333657!4m5!1s0x47165b728c655317%3A0xab0cfb7e60ca76b8!2sBulwary%20Wis%C5%82y!3m2!1d50.055042!2d19.9315881!4m5!1s0x47165b1fb91ca505%3A0x948756c8195478d7!2sPuente%20D%C4%99bnicki!3m2!1d50.0541462!2d19.9283692!4m5!1s0x47165b2b846aa1d5%3A0x277c5218e1e226e!2sGaleria%20Plaza!3m2!1d50.0643981!2d19.9839554!4m5!1s0x47165b6d053619f5%3A0xacb9dfc4d67fa598!2sCastillo%20de%20Wawel%2C%20Wawel%205%2C%2031-001%20Krak%C3%B3w%2C%20Polonia!3m2!1d50.0541115!2d19.935423!5e1!3m2!1ses!2ses!4v1762801685085!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/EkandQXVGUgT45m68" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/krakovia_dia2.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/krakovia_dia2.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/krakovia_dia2.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/krakovia_dia2.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/krakovia_dia2.jpg?width=800" srcset="
+      /src/assets/img/maps/krakovia_dia2.jpg?width=800 800w,
+      /src/assets/img/maps/krakovia_dia2.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 2 pels llocs més emblemàtics de Krakòvia"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
         </article>
 
         <article class="ruta-dia">
@@ -90,10 +119,29 @@
             <p>Visita la fàbrica de Schindler i, si ho desitges, fes una excursió al camp de concentració
               d’Auschwitz-Birkenau, a prop de la ciutat.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d8706.493993767834!2d19.94659905148259!3d50.050500825199784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e2!4m5!1s0x47165b6a5d7eda4b%3A0x71c57113b17f155e!2splac%20Nowy%2C%2031-056%20Krak%C3%B3w%2C%20Polonia!3m2!1d50.0518711!2d19.9446205!4m5!1s0x47165b6afbaad895%3A0xb630e6ae7b17984f!2sTempel%20Synagogue%2C%20Krak%C3%B3w!3m2!1d50.052872!2d19.944237899999997!4m5!1s0x47165b4028ef8b71%3A0x534ba59ccbb065b2!2sSzeroka%2C%2031-052%20Krak%C3%B3w%2C%20Polonia!3m2!1d50.052621099999996!2d19.9479381!4m5!1s0x47165b403350e9b1%3A0x4e0ac004af65db44!2sOld%20Synagogue!3m2!1d50.051459699999995!2d19.9485936!4m5!1s0x47165b46b4f39623%3A0x4ba0851460a4b551!2zTW9zdCBQb3dzdGHFhGPDs3cgxZpsxIVza2ljaA!3m2!1d50.0491958!2d19.9534079!4m5!1s0x47165b48b8f5e2db%3A0x32ef2980f3a497f9!2sF%C3%A1brica%20de%20Oskar%20Schindler!3m2!1d50.047397!2d19.961583299999997!4m5!1s0x47165b443772a3d3%3A0xfb8f255dcd0042c1!2sPlac%20Bohater%C3%B3w%20Getta%2C%20Krak%C3%B3w%2C%20Polonia!3m2!1d50.0468999!2d19.954822099999998!4m5!1s0x47165b6a5d7eda4b%3A0x71c57113b17f155e!2splac%20Nowy%2C%2031-056%20Krak%C3%B3w%2C%20Polonia!3m2!1d50.0518711!2d19.9446205!5e1!3m2!1ses!2ses!4v1762801884705!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/cTSKcuTb3JmRkBpNA" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/krakovia_dia3.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/krakovia_dia3.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/krakovia_dia3.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/krakovia_dia3.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/krakovia_dia3.jpg?width=800" srcset="
+      /src/assets/img/maps/krakovia_dia3.jpg?width=800 800w,
+      /src/assets/img/maps/krakovia_dia3.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 3 pels llocs més emblemàtics de Krakòvia"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
         <article class="ruta-dia">
@@ -102,10 +150,29 @@
             <p>Relax al parc Planty i compres a les botigues d’artesania del centre. Acaba el viatge amb un cafè o una
               sopa calenta en algun local tradicional.</p>
           </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d17411.27378493007!2d19.93813253857177!3d50.055225071223425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e2!4m5!1s0x47165b121225416d%3A0x39928677322a305f!2sPlanty%2C%2031-041%20Krak%C3%B3w%2C%20Polonia!3m2!1d50.0599245!2d19.941430699999998!4m5!1s0x47165b104fe07175%3A0x3ba8510017a7fc87!2sJuliusz%20S%C5%82owacki%20Theatre!3m2!1d50.0639313!2d19.9428604!4m5!1s0x47165b15ba6d6e31%3A0xa3f63eac8bf35f1d!2sMarket%20Hall!3m2!1d50.0581246!2d19.948320799999998!4m5!1s0x47165b3f500ba1e1%3A0x7ccd1b01e2fc3842!2sGaleria%20Kazimierz!3m2!1d50.0536197!2d19.955430399999997!4m5!1s0x47165b43aa5244e5%3A0x69c654154bf2b269!2sPuente%20del%20Padre%20Bernatek!3m2!1d50.046492199999996!2d19.947568!4m5!1s0x47165b6a2e7d8bef%3A0x62672e9c1bce5ed7!2sKazimierz%2C%20Cracovia%2C%20Polonia!3m2!1d50.048556299999994!2d19.944718299999998!4m5!1s0x47165b154a687419%3A0x60f80f347bd9cb1f!2zU3Rhcm93acWbbG5hLCBLcmFrw7N3LCBQb2xvbmlh!3m2!1d50.054804!2d19.9471229!4m5!1s0x47165b121225416d%3A0x39928677322a305f!2sPlanty%2C%2031-041%20Krak%C3%B3w%2C%20Polonia!3m2!1d50.0599245!2d19.941430699999998!5e1!3m2!1ses!2ses!4v1762801987164!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <a href="https://maps.app.goo.gl/GxnNCUjnqJMGWnjr6" target="_blank" rel="noopener noreferrer"
+            class="mapa-link">
+
+            <picture>
+
+              <source type="image/avif" srcset="
+      /src/assets/img/maps/krakovia_dia4.jpg?as=avif&width=800 800w,
+      /src/assets/img/maps/krakovia_dia4.jpg?as=avif&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <source type="image/webp" srcset="
+      /src/assets/img/maps/krakovia_dia4.jpg?as=webp&width=800 800w,
+      /src/assets/img/maps/krakovia_dia4.jpg?as=webp&width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" />
+
+              <img src="/src/assets/img/maps/krakovia_dia4.jpg?width=800" srcset="
+      /src/assets/img/maps/krakovia_dia4.jpg?width=800 800w,
+      /src/assets/img/maps/krakovia_dia4.jpg?width=1200 1200w" sizes="(max-width: 768px) 100vw, 800px" width="1000"
+                height="500" alt="Mapa de la ruta del dia 4 pels llocs més emblemàtics de Krakòvia"
+                class="img-fluid mapa-static" loading="lazy" decoding="async" />
+            </picture>
+            <span class="btn-veure-mapa">📍 Obre el mapa interactiu</span>
+          </a>
+
         </article>
 
       </div>
