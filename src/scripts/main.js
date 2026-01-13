@@ -1,5 +1,10 @@
 import Swal from 'sweetalert2';
+import * as CookieConsent from 'vanilla-cookieconsent';
+import 'vanilla-cookieconsent/dist/cookieconsent.css';
 import '../assets/css/cookieconsent.css';
+import { config as cookieConfig } from './cookieconsent-config.js';
+
+CookieConsent.run(cookieConfig);
 
 // Imports condicionals
 // Carrego l'script només si trobo algún nom de classe corresponent a la pàgina.
